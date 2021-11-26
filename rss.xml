@@ -3,8 +3,8 @@
     <channel>
         <title>Hexo</title>
         <subtitle></subtitle>
-        <icon>http://gitee.com/mzcy3021213/blog/images/favicon.ico</icon>
-        <link>http://gitee.com/mzcy3021213/blog</link>
+        <icon>http://nc3021.github.io/nc3021.github.io/images/favicon.ico</icon>
+        <link>http://nc3021.github.io/nc3021.github.io</link>
         <author>
           <name>John Doe</name>
         </author>
@@ -13,14 +13,14 @@
         <pubDate>Fri, 26 Nov 2021 16:01:56 +0800</pubDate>
         <lastBuildDate>Fri, 26 Nov 2021 16:01:56 +0800</lastBuildDate>
         <item>
-            <guid isPermalink="true">http://gitee.com/mzcy3021213/blog/2021/11/26/financial/Eviews/</guid>
+            <guid isPermalink="true">http://nc3021.github.io/nc3021.github.io/2021/11/26/financial/Eviews/</guid>
             <title>EViews操作</title>
-            <link>http://gitee.com/mzcy3021213/blog/2021/11/26/financial/Eviews/</link>
-            <category term="金融" scheme="http://gitee.com/mzcy3021213/blog/categories/financial/" />
-            <category term="金融" scheme="http://gitee.com/mzcy3021213/blog/tags/%E9%87%91%E8%9E%8D/" />
-            <category term="计量经济学" scheme="http://gitee.com/mzcy3021213/blog/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/" />
-            <category term="EViews" scheme="http://gitee.com/mzcy3021213/blog/tags/EViews/" />
-            <category term="量化金融" scheme="http://gitee.com/mzcy3021213/blog/tags/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D/" />
+            <link>http://nc3021.github.io/nc3021.github.io/2021/11/26/financial/Eviews/</link>
+            <category term="金融" scheme="http://nc3021.github.io/nc3021.github.io/categories/financial/" />
+            <category term="金融" scheme="http://nc3021.github.io/nc3021.github.io/tags/%E9%87%91%E8%9E%8D/" />
+            <category term="计量经济学" scheme="http://nc3021.github.io/nc3021.github.io/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/" />
+            <category term="EViews" scheme="http://nc3021.github.io/nc3021.github.io/tags/EViews/" />
+            <category term="量化金融" scheme="http://nc3021.github.io/nc3021.github.io/tags/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D/" />
             <pubDate>Fri, 26 Nov 2021 16:01:56 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;eviews操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#eviews操作&#34;&gt;#&lt;/a&gt; EViews 操作&lt;/h1&gt;
 &lt;h3 id=&#34;假设检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#假设检验&#34;&gt;#&lt;/a&gt; 假设检验&lt;/h3&gt;
@@ -50,11 +50,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://gitee.com/mzcy3021213/blog/2021/11/26/front-end/CSS/</guid>
+            <guid isPermalink="true">http://nc3021.github.io/nc3021.github.io/2021/11/26/front-end/CSS/</guid>
             <title>CSS学习</title>
-            <link>http://gitee.com/mzcy3021213/blog/2021/11/26/front-end/CSS/</link>
-            <category term="前端" scheme="http://gitee.com/mzcy3021213/blog/categories/front-end/" />
-            <category term="前端" scheme="http://gitee.com/mzcy3021213/blog/tags/%E5%89%8D%E7%AB%AF/" />
+            <link>http://nc3021.github.io/nc3021.github.io/2021/11/26/front-end/CSS/</link>
+            <category term="前端" scheme="http://nc3021.github.io/nc3021.github.io/categories/front-end/" />
+            <category term="前端" scheme="http://nc3021.github.io/nc3021.github.io/tags/%E5%89%8D%E7%AB%AF/" />
             <pubDate>Fri, 26 Nov 2021 16:01:56 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;css学习&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#css学习&#34;&gt;#&lt;/a&gt; CSS 学习&lt;/h1&gt;
 &lt;h2 id=&#34;1css选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1css选择器&#34;&gt;#&lt;/a&gt; 1.CSS 选择器&lt;/h2&gt;
@@ -180,12 +180,12 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://gitee.com/mzcy3021213/blog/2021/11/25/hybrid-learning/Git/</guid>
+            <guid isPermalink="true">http://nc3021.github.io/nc3021.github.io/2021/11/25/hybrid-learning/Git/</guid>
             <title>Git使用说明</title>
-            <link>http://gitee.com/mzcy3021213/blog/2021/11/25/hybrid-learning/Git/</link>
-            <category term="杂学" scheme="http://gitee.com/mzcy3021213/blog/categories/hybrid-learning/" />
-            <category term="Git" scheme="http://gitee.com/mzcy3021213/blog/tags/Git/" />
-            <category term="分布式文件管理" scheme="http://gitee.com/mzcy3021213/blog/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/" />
+            <link>http://nc3021.github.io/nc3021.github.io/2021/11/25/hybrid-learning/Git/</link>
+            <category term="杂学" scheme="http://nc3021.github.io/nc3021.github.io/categories/hybrid-learning/" />
+            <category term="Git" scheme="http://nc3021.github.io/nc3021.github.io/tags/Git/" />
+            <category term="分布式文件管理" scheme="http://nc3021.github.io/nc3021.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/" />
             <pubDate>Thu, 25 Nov 2021 21:36:15 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;git使用说明&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git使用说明&#34;&gt;#&lt;/a&gt; Git 使用说明&lt;/h1&gt;
 &lt;h2 id=&#34;git-本地命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-本地命令&#34;&gt;#&lt;/a&gt; Git 本地命令&lt;/h2&gt;
@@ -320,9 +320,9 @@ $ git stash pop
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://gitee.com/mzcy3021213/blog/2021/11/25/hello-world/</guid>
+            <guid isPermalink="true">http://nc3021.github.io/nc3021.github.io/2021/11/25/hello-world/</guid>
             <title>Hello World</title>
-            <link>http://gitee.com/mzcy3021213/blog/2021/11/25/hello-world/</link>
+            <link>http://nc3021.github.io/nc3021.github.io/2021/11/25/hello-world/</link>
             <pubDate>Thu, 25 Nov 2021 17:41:20 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
@@ -337,13 +337,13 @@ $ git stash pop
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://gitee.com/mzcy3021213/blog/2021/11/17/financial/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/</guid>
+            <guid isPermalink="true">http://nc3021.github.io/nc3021.github.io/2021/11/17/financial/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/</guid>
             <title>计量经济学</title>
-            <link>http://gitee.com/mzcy3021213/blog/2021/11/17/financial/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/</link>
-            <category term="金融" scheme="http://gitee.com/mzcy3021213/blog/categories/financial/" />
-            <category term="金融" scheme="http://gitee.com/mzcy3021213/blog/tags/%E9%87%91%E8%9E%8D/" />
-            <category term="计量经济学" scheme="http://gitee.com/mzcy3021213/blog/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/" />
-            <category term="量化金融" scheme="http://gitee.com/mzcy3021213/blog/tags/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D/" />
+            <link>http://nc3021.github.io/nc3021.github.io/2021/11/17/financial/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/</link>
+            <category term="金融" scheme="http://nc3021.github.io/nc3021.github.io/categories/financial/" />
+            <category term="金融" scheme="http://nc3021.github.io/nc3021.github.io/tags/%E9%87%91%E8%9E%8D/" />
+            <category term="计量经济学" scheme="http://nc3021.github.io/nc3021.github.io/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/" />
+            <category term="量化金融" scheme="http://nc3021.github.io/nc3021.github.io/tags/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D/" />
             <pubDate>Wed, 17 Nov 2021 15:52:54 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;计量经济学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计量经济学&#34;&gt;#&lt;/a&gt; 计量经济学&lt;/h1&gt;
 &lt;h2 id=&#34;第一章-回归分析概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章-回归分析概述&#34;&gt;#&lt;/a&gt; 第一章 回归分析概述&lt;/h2&gt;
@@ -536,11 +536,11 @@ $ git stash pop
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://gitee.com/mzcy3021213/blog/2021/11/08/front-end/HTML/</guid>
+            <guid isPermalink="true">http://nc3021.github.io/nc3021.github.io/2021/11/08/front-end/HTML/</guid>
             <title>HTML学习</title>
-            <link>http://gitee.com/mzcy3021213/blog/2021/11/08/front-end/HTML/</link>
-            <category term="前端" scheme="http://gitee.com/mzcy3021213/blog/categories/front-end/" />
-            <category term="前端" scheme="http://gitee.com/mzcy3021213/blog/tags/%E5%89%8D%E7%AB%AF/" />
+            <link>http://nc3021.github.io/nc3021.github.io/2021/11/08/front-end/HTML/</link>
+            <category term="前端" scheme="http://nc3021.github.io/nc3021.github.io/categories/front-end/" />
+            <category term="前端" scheme="http://nc3021.github.io/nc3021.github.io/tags/%E5%89%8D%E7%AB%AF/" />
             <pubDate>Mon, 08 Nov 2021 15:40:53 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;html学习&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#html学习&#34;&gt;#&lt;/a&gt; HTML 学习&lt;/h1&gt;
 &lt;h2 id=&#34;1标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1标签&#34;&gt;#&lt;/a&gt; 1. 标签&lt;/h2&gt;
@@ -608,12 +608,12 @@ $ git stash pop
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://gitee.com/mzcy3021213/blog/2021/09/11/hybrid-learning/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+            <guid isPermalink="true">http://nc3021.github.io/nc3021.github.io/2021/09/11/hybrid-learning/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
             <title>Typora使用教程</title>
-            <link>http://gitee.com/mzcy3021213/blog/2021/09/11/hybrid-learning/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
-            <category term="杂学" scheme="http://gitee.com/mzcy3021213/blog/categories/hybrid-learning/" />
-            <category term="Typora" scheme="http://gitee.com/mzcy3021213/blog/tags/Typora/" />
-            <category term="markdown" scheme="http://gitee.com/mzcy3021213/blog/tags/markdown/" />
+            <link>http://nc3021.github.io/nc3021.github.io/2021/09/11/hybrid-learning/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+            <category term="杂学" scheme="http://nc3021.github.io/nc3021.github.io/categories/hybrid-learning/" />
+            <category term="Typora" scheme="http://nc3021.github.io/nc3021.github.io/tags/Typora/" />
+            <category term="markdown" scheme="http://nc3021.github.io/nc3021.github.io/tags/markdown/" />
             <pubDate>Sat, 11 Sep 2021 16:07:23 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;typora使用教程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora使用教程&#34;&gt;#&lt;/a&gt; Typora 使用教程&lt;/h1&gt;
 &lt;h2 id=&#34;1常用快捷键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1常用快捷键&#34;&gt;#&lt;/a&gt; 1. 常用快捷键&lt;/h2&gt;
