@@ -1,0 +1,688 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://gitee.com/mzcy3021213/blog</id>
+    <title>Hexo</title>
+    <subtitle></subtitle>
+    <icon>http://gitee.com/mzcy3021213/blog/images/favicon.ico</icon>
+    <link href="http://gitee.com/mzcy3021213/blog" />
+    <author>
+      <name>John Doe</name>
+    </author>
+    <updated>2021-11-26T08:01:56.692Z</updated>
+    <entry>
+        <id>http://gitee.com/mzcy3021213/blog/2021/11/26/financial/Eviews/</id>
+        <title>EViews操作</title>
+        <link rel="alternate" href="http://gitee.com/mzcy3021213/blog/2021/11/26/financial/Eviews/"/>
+        <content type="html">&lt;h1 id=&#34;eviews操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#eviews操作&#34;&gt;#&lt;/a&gt; EViews 操作&lt;/h1&gt;
+&lt;h3 id=&#34;假设检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#假设检验&#34;&gt;#&lt;/a&gt; 假设检验&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/dajXyExDBHbZA56.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211116103231625.png&#34; alt=&#34;image-20211116103231625&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ols拟合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ols拟合&#34;&gt;#&lt;/a&gt; OLS 拟合&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/Em53r1qtTp4ZoRa.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;拟合优度检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拟合优度检验&#34;&gt;#&lt;/a&gt; 拟合优度检验&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/nOJXp7yvcZuBdjI.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;相关性分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#相关性分析&#34;&gt;#&lt;/a&gt; 相关性分析&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/k9HBYeK1CfnsZqV.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/xgms2JN6ZpIqRbY.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;检查是否为遗漏变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#检查是否为遗漏变量&#34;&gt;#&lt;/a&gt; 检查是否为遗漏变量&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/TxFZnfXI32hRy48.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;方差膨胀因子vif&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#方差膨胀因子vif&#34;&gt;#&lt;/a&gt; 方差膨胀因子 VIF&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/LCfMNrSpJEuVYXw.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;white检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#white检验&#34;&gt;#&lt;/a&gt; White 检验&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/fceaKF8BdrXqW4Y.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/YtxPiSzeyhJWmD5.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;white调整法处理异方差&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#white调整法处理异方差&#34;&gt;#&lt;/a&gt; White 调整法处理异方差&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/B5T6Oi9MIEZfUrt.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;取对数处理异方差&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#取对数处理异方差&#34;&gt;#&lt;/a&gt; 取对数处理异方差&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/E5FdY8JAINBSfxb.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/zvp8EIU6DcdXCNi.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;建立logit模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#建立logit模型&#34;&gt;#&lt;/a&gt; 建立 Logit 模型&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/16/RAVhzSIUaGQb17x.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</content>
+        <category term="金融" scheme="http://gitee.com/mzcy3021213/blog/categories/financial/" />
+        <category term="金融" scheme="http://gitee.com/mzcy3021213/blog/tags/%E9%87%91%E8%9E%8D/" />
+        <category term="计量经济学" scheme="http://gitee.com/mzcy3021213/blog/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/" />
+        <category term="EViews" scheme="http://gitee.com/mzcy3021213/blog/tags/EViews/" />
+        <category term="量化金融" scheme="http://gitee.com/mzcy3021213/blog/tags/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D/" />
+        <updated>2021-11-26T08:01:56.692Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitee.com/mzcy3021213/blog/2021/11/26/front-end/CSS/</id>
+        <title>CSS学习</title>
+        <link rel="alternate" href="http://gitee.com/mzcy3021213/blog/2021/11/26/front-end/CSS/"/>
+        <content type="html">&lt;h1 id=&#34;css学习&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#css学习&#34;&gt;#&lt;/a&gt; CSS 学习&lt;/h1&gt;
+&lt;h2 id=&#34;1css选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1css选择器&#34;&gt;#&lt;/a&gt; 1.CSS 选择器&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/roUpHWm3NqzinLs.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;标签选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标签选择器&#34;&gt;#&lt;/a&gt; 标签选择器：&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/6bYiEtgm9wx5oaM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;style&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token style&#34;&gt;&lt;span class=&#34;token language-css&#34;&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token selector&#34;&gt;P&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token property&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;green&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;style&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;类选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#类选择器&#34;&gt;#&lt;/a&gt; 类选择器 .&lt;/h3&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;red&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    红色字体&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;style&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token style&#34;&gt;&lt;span class=&#34;token language-css&#34;&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token selector&#34;&gt;.red&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token property&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;red&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;style&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;id选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#id选择器&#34;&gt;#&lt;/a&gt; id 选择器  #&lt;/h3&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;red&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    红色字体&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;style&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token style&#34;&gt;&lt;span class=&#34;token language-css&#34;&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token selector&#34;&gt;#red&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token property&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;red&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;style&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; /*只能调用一次*/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;通配符选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#通配符选择器&#34;&gt;#&lt;/a&gt; 通配符选择器 *&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/pZMQtjs4xBdzNGR.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2css字体属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2css字体属性&#34;&gt;#&lt;/a&gt; 2.CSS 字体属性&lt;/h2&gt;
+&lt;h3 id=&#34;字体系列-font-family&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字体系列-font-family&#34;&gt;#&lt;/a&gt; 字体系列 font-family&lt;/h3&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   p&amp;#123;font-family:&#34;Microsoft Yahei&#34;,Arial;&amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;字体大小-font-size&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字体大小-font-size&#34;&gt;#&lt;/a&gt; 字体大小 font-size&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/egkPE3Oa76oHpxn.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;字体粗细-font-weight&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字体粗细-font-weight&#34;&gt;#&lt;/a&gt; 字体粗细 font-weight&lt;/h3&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;style&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token style&#34;&gt;&lt;span class=&#34;token language-css&#34;&gt;&lt;span class=&#34;token selector&#34;&gt;.bold&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token property&#34;&gt;font-weight&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;700&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;/*font-weight:bold   两者等效 */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;style&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/LY13EhQprcIJN7l.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;文字样式-font-style&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文字样式-font-style&#34;&gt;#&lt;/a&gt; 文字样式 font-style&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/YKOSMiAXCa1d5Pc.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;字体复合属性-font&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字体复合属性-font&#34;&gt;#&lt;/a&gt; 字体复合属性 font&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/bZR8XjFGkc9JT4Q.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3css文本属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3css文本属性&#34;&gt;#&lt;/a&gt; 3.CSS 文本属性&lt;/h2&gt;
+&lt;h3 id=&#34;文本颜色-color&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本颜色-color&#34;&gt;#&lt;/a&gt; 文本颜色 color&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/6sBzWlIGDJwU81t.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;文本对齐-text-align&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本对齐-text-align&#34;&gt;#&lt;/a&gt; 文本对齐 text-align&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/tngFhDlwQo3buix.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;装饰文本-text-decoration&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#装饰文本-text-decoration&#34;&gt;#&lt;/a&gt; 装饰文本 text-decoration&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/bfPesMgSwWER9VK.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;文本缩进-text-indent&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文本缩进-text-indent&#34;&gt;#&lt;/a&gt; 文本缩进 text-indent&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/kx9ZMcnOILbN2js.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;行间距-line-height&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#行间距-line-height&#34;&gt;#&lt;/a&gt; 行间距 line-height&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/PqYlACidGrxLNok.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;css引入方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#css引入方式&#34;&gt;#&lt;/a&gt; CSS 引入方式&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/CtLgyoRjfmwal39.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;外部引入快捷键：link +Tab&lt;/p&gt;
+&lt;h2 id=&#34;4emment语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4emment语法&#34;&gt;#&lt;/a&gt; 4.Emment 语法&lt;/h2&gt;
+&lt;h3 id=&#34;快速生成html&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#快速生成html&#34;&gt;#&lt;/a&gt; 快速生成 HTML&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211109220515298.png&#34; alt=&#34;image-20211109220515298&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;快速生成css&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#快速生成css&#34;&gt;#&lt;/a&gt; 快速生成 CSS&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/gfREu5e4l2bxYSW.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;5复合选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5复合选择器&#34;&gt;#&lt;/a&gt; 5. 复合选择器&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/YRMbUhiynS3B4f1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;后代选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#后代选择器&#34;&gt;#&lt;/a&gt; 后代选择器&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/WrLx3O9uNSjcfFq.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;子选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#子选择器&#34;&gt;#&lt;/a&gt; 子选择器&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/mXuo4xSEfhONZen.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;（亲儿子包含所有儿子）&lt;/p&gt;
+&lt;h3 id=&#34;并集选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#并集选择器&#34;&gt;#&lt;/a&gt; 并集选择器&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/V6AoCtNfEKgmD3v.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;伪类选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#伪类选择器&#34;&gt;#&lt;/a&gt; 伪类选择器&lt;/h3&gt;
+&lt;h4 id=&#34;链接伪类选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#链接伪类选择器&#34;&gt;#&lt;/a&gt; 链接伪类选择器&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/RlmMSI1ivKQG2Ta.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;需要按照 LVHA 顺序声明&lt;/p&gt;
+&lt;h4 id=&#34;focus伪类选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#focus伪类选择器&#34;&gt;#&lt;/a&gt; focus 伪类选择器&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/os27TGQ3tBkd1zj.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;6元素显示模式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6元素显示模式&#34;&gt;#&lt;/a&gt; 6. 元素显示模式&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/eQNda9g5sXPzhRY.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/mYajh1rD26FvQiO.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;显示模式的转换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#显示模式的转换&#34;&gt;#&lt;/a&gt; 显示模式的转换&lt;/h4&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;style&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token style&#34;&gt;&lt;span class=&#34;token language-css&#34;&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token selector&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token property&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;inline&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token selector&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token property&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;block&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token selector&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token property&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;inline-block&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;style&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;7css背景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7css背景&#34;&gt;#&lt;/a&gt; 7.CSS 背景&lt;/h2&gt;
+&lt;h4 id=&#34;背景颜色&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景颜色&#34;&gt;#&lt;/a&gt; 背景颜色&lt;/h4&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;div&amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   background-color: #FF6700;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   opacity: 0.5;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;div&amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   backfround:rgba(0,128,0,.3)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/yOZ48ac19ozg6BR.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;背景图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景图片&#34;&gt;#&lt;/a&gt; 背景图片&lt;/h4&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;background-image：none|url(url)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;优点：便于控制位置&lt;/p&gt;
+&lt;p&gt;url：绝对或相对地址&lt;/p&gt;
+&lt;h4 id=&#34;背景平铺&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景平铺&#34;&gt;#&lt;/a&gt; 背景平铺&lt;/h4&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;background-repeat: repeat|no-repeat|repeat-x|repeat-y;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;背景图片位置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景图片位置&#34;&gt;#&lt;/a&gt; 背景图片位置&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/xO6JXvYrpZniFdq.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/xUNITDa1CGoVHR5.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;背景图像固定&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景图像固定&#34;&gt;#&lt;/a&gt; 背景图像固定&lt;/h4&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;background-attachment：scroll|fixed&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;背景符合写法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景符合写法&#34;&gt;#&lt;/a&gt; 背景符合写法&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/GIhOCQtszncoPpb.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;8css三大特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#8css三大特性&#34;&gt;#&lt;/a&gt; 8.CSS 三大特性&lt;/h2&gt;
+&lt;h4 id=&#34;层叠性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#层叠性&#34;&gt;#&lt;/a&gt; 层叠性&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/AhKFeMiUnm7O9vx.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;继承性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#继承性&#34;&gt;#&lt;/a&gt; 继承性&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/AI7bwF6HEpzNovD.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;优先级&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#优先级&#34;&gt;#&lt;/a&gt; 优先级&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/fo56NnKBygda2Dr.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/10/t2dvcBOZaoTAuIq.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;9盒子模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#9盒子模型&#34;&gt;#&lt;/a&gt; 9. 盒子模型&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/pvFML79hSiORPaK.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;边框-border&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#边框-border&#34;&gt;#&lt;/a&gt; 边框 border&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211112150616313.png&#34; alt=&#34;image-20211112150616313&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;边框各样式示例：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/btNeEgIhox5zPaV.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211112151045556.png&#34; alt=&#34;image-20211112151045556&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;边框复合写法：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211112152152282.png&#34; alt=&#34;image-20211112152152282&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/nvgqYAr3NTQyU8t.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;内边距-padding&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内边距-padding&#34;&gt;#&lt;/a&gt; 内边距 padding&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/9guDw1qLWtPkmZU.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;一旦设定了 height 或 width,padding 就会使其比原有盒子更大（margin 不会）；&lt;/p&gt;
+&lt;h4 id=&#34;外边距-margin&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#外边距-margin&#34;&gt;#&lt;/a&gt; 外边距 margin&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/n14dpqYOjox6EUD.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;块级元素水平居中：&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;margin:0 auto;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;行内元素或行内块元素水平居中：&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;text-align:center;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;外边距合并：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/a3IyTLZ5dM4VgpU.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211112155921646.png&#34; alt=&#34;image-20211112155921646&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;清除浏览器自带的标签内外边距：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/NJk7gfDRZzLOmvM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;圆角边框&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#圆角边框&#34;&gt;#&lt;/a&gt; 圆角边框&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211112182308262.png&#34; alt=&#34;image-20211112182308262&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;属性为一个值则对应四角，两个值则对应（左上右下，右上左下），四个值则对应（左上，右上，右下，左下）；&lt;/p&gt;
+&lt;p&gt;分开写法：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/Sbe8CYQNZEA5q9p.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;圆形边框：&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;border-radius:50%;(在正方形盒子里)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;盒子阴影-box-shadow&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#盒子阴影-box-shadow&#34;&gt;#&lt;/a&gt; 盒子阴影 box-shadow&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/xe1BifprjPugUL8.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;div:hover&amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; box-shadow:10px 10px 10px -4px rgba(0,0,0,.3);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;文字阴影-text-shadow&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文字阴影-text-shadow&#34;&gt;#&lt;/a&gt; 文字阴影 text-shadow&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/un573tQZ2xj4oqO.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;div:hover&amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; text-shadow:5px 5px 6px rgba(0,0,0,.3);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;10浮动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#10浮动&#34;&gt;#&lt;/a&gt; 10. 浮动&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/kGd8Ca7cj6USLi3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/7sNLv3CAmVhYZcH.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/AXyZ5g6brx4oWNl.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;问题与解决方案&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题与解决方案&#34;&gt;#&lt;/a&gt; 问题与解决方案&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;为什么 CSS 样式一般放在 head 中？&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/5R4zWBr6vdHNFfU.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="前端" scheme="http://gitee.com/mzcy3021213/blog/categories/front-end/" />
+        <category term="前端" scheme="http://gitee.com/mzcy3021213/blog/tags/%E5%89%8D%E7%AB%AF/" />
+        <updated>2021-11-26T08:01:56.688Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitee.com/mzcy3021213/blog/2021/11/25/hybrid-learning/Git/</id>
+        <title>Git使用说明</title>
+        <link rel="alternate" href="http://gitee.com/mzcy3021213/blog/2021/11/25/hybrid-learning/Git/"/>
+        <content type="html">&lt;h1 id=&#34;git使用说明&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git使用说明&#34;&gt;#&lt;/a&gt; Git 使用说明&lt;/h1&gt;
+&lt;h2 id=&#34;git-本地命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-本地命令&#34;&gt;#&lt;/a&gt; Git 本地命令&lt;/h2&gt;
+&lt;h4 id=&#34;创建版本库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建版本库&#34;&gt;#&lt;/a&gt; 创建版本库&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;先创建空文件夹（路径上没有中文）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在文件夹上打开  &lt;code&gt;git bash&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ git init
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211120201247.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;将文件添加到版本库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#将文件添加到版本库&#34;&gt;#&lt;/a&gt; 将文件添加到版本库&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;figure class=&#34;highlight git&#34;&gt;&lt;figcaption data-lang=&#34;git&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token command&#34;&gt;$ git add xxx.txt&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token command&#34;&gt;$ git add&lt;span class=&#34;token parameter&#34;&gt; -A&lt;/span&gt;    //添加所有文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;可以重复多次使用添加多个文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;figure class=&#34;highlight git&#34;&gt;&lt;figcaption data-lang=&#34;git&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token command&#34;&gt;$ git commit&lt;span class=&#34;token parameter&#34;&gt; -m&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;本次提交内容的说明&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;将添加的所有文件提交到仓库&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;查看仓库当前状态&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看仓库当前状态&#34;&gt;#&lt;/a&gt; 查看仓库当前状态&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git status
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;随时可以掌握工作区状态&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211120202408.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git diff
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以查看文件被修改前后的内容&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211120202606.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;版本回退&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#版本回退&#34;&gt;#&lt;/a&gt; 版本回退&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git reset --hard commit_id //退回某个版本
+$ git reset --hard HEAD^ //退回上一个版本
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;$ git log  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以查看提交历史，方便回退到过去的哪个版本；&lt;/p&gt;
+&lt;p&gt;查看结束后按 &lt;code&gt;q&lt;/code&gt;  退出；&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211120204012.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git reflog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以查看命令历史，方便确定回到未来的哪个版本；&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211120203952.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;撤销修改&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#撤销修改&#34;&gt;#&lt;/a&gt; 撤销修改&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git checkout -- &amp;lt;file&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;让这个文件回退到最近一次 &lt;code&gt;git commit&lt;/code&gt;  或 &lt;code&gt;git add&lt;/code&gt;  时的状态（即撤销在工作区的修改内容，即使文件被删除了也可以恢复）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$git reset HEAD &amp;lt;file&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;清除暂存区的提交内容&lt;/p&gt;
+&lt;h4 id=&#34;删除文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除文件&#34;&gt;#&lt;/a&gt; 删除文件&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git rm &amp;lt;file&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;git-远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-远程仓库&#34;&gt;#&lt;/a&gt; Git 远程仓库&lt;/h2&gt;
+&lt;h4 id=&#34;关联远程仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关联远程仓库&#34;&gt;#&lt;/a&gt; 关联远程仓库&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git remote add xxx（远程仓库的本地名）git@xxx.com(仓库官网地址):xx（用户名）/xxxx(文件夹名).git
+$ git remote add origin git@gitee.com:mzcy3021213/image.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;将 &lt;code&gt;remote&lt;/code&gt;  改为 &lt;code&gt;clone&lt;/code&gt;  即可克隆远程库生成一个本地库；&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git remote rm &amp;lt;远程仓库的本地名&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;取消关联远程仓库&lt;/p&gt;
+&lt;h4 id=&#34;关联远程的其它分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关联远程的其它分支&#34;&gt;#&lt;/a&gt; 关联远程的其它分支&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git branch --set-upstream-to=origin/&amp;lt;分支&amp;gt; &amp;lt;分支&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;拉取&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拉取&#34;&gt;#&lt;/a&gt; 拉取&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git pull
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;推送&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推送&#34;&gt;#&lt;/a&gt; 推送&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git push -u origin master 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;加上了 &lt;code&gt;-u&lt;/code&gt;  参数，Git 不但会把本地的 &lt;code&gt;master&lt;/code&gt;  分支内容推送的远程新的 &lt;code&gt;master&lt;/code&gt;  分支，还会把本地的 &lt;code&gt;master&lt;/code&gt;  分支和远程的 &lt;code&gt;master&lt;/code&gt;  分支关联起来，在以后的推送或者拉取时就可以简化命令；&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git push origin dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;推送到远程的 dev 分支；&lt;/p&gt;
+&lt;h4 id=&#34;多人协作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多人协作&#34;&gt;#&lt;/a&gt; 多人协作&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211123155748.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;分支管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分支管理&#34;&gt;#&lt;/a&gt; 分支管理&lt;/h2&gt;
+&lt;h4 id=&#34;创建并切换分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建并切换分支&#34;&gt;#&lt;/a&gt; 创建并切换分支&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git branch &amp;lt;分支名&amp;gt;       //创建分支
+$ git checkout &amp;lt;分支名&amp;gt;     
+$ git switch &amp;lt;分支名&amp;gt;       //切换分支
+
+$ git checkout -b &amp;lt;分支名&amp;gt;  
+$ git switch -c &amp;lt;分支名&amp;gt;    //创建并切换分支
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;$ git branch                //查看当前分支
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211123145722.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git branch&lt;/code&gt;  命令会列出所有分支，当前分支前面会标一个 &lt;code&gt;*&lt;/code&gt;  号；&lt;/p&gt;
+&lt;h4 id=&#34;合并分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#合并分支&#34;&gt;#&lt;/a&gt; 合并分支&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git merge &amp;lt;分支名&amp;gt;              
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;git merge&lt;/code&gt;  命令用于合并指定分支到当前分支&lt;/p&gt;
+&lt;h4 id=&#34;删除分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除分支&#34;&gt;#&lt;/a&gt; 删除分支&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git branch -d &amp;lt;分支名&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;储藏分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#储藏分支&#34;&gt;#&lt;/a&gt; 储藏分支&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git stash                   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;存储还未完成的分支；&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git stash list
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;查看存储的分支；&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git stash apply          
+$ git stash pop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;恢复分支：一种是用 &lt;code&gt;git stash apply&lt;/code&gt;  恢复，但是恢复后，stash 内容并不删除，你需要用 &lt;code&gt;git stash drop&lt;/code&gt;  来删除；&lt;/p&gt;
+&lt;p&gt;另一种方式是用 &lt;code&gt;git stash pop&lt;/code&gt; ，恢复的同时把 stash 内容也删了；&lt;/p&gt;
+&lt;h4 id=&#34;修复分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修复分支&#34;&gt;#&lt;/a&gt; 修复分支&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git cherry-pick &amp;lt;提交的编号&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;将对其它分支修改的提交移植到本分支上；&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211123155844.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;分支标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分支标签&#34;&gt;#&lt;/a&gt; 分支标签&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ git tag &amp;lt;标签名&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;对当前分支创建标签&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git tag 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;查询所有标签&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git tag &amp;lt;标签名&amp;gt; &amp;lt;提交编号&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;对历史提交打上标签&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git tag -d &amp;lt;标签名&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;删除标签&lt;/p&gt;
+</content>
+        <category term="杂学" scheme="http://gitee.com/mzcy3021213/blog/categories/hybrid-learning/" />
+        <category term="Git" scheme="http://gitee.com/mzcy3021213/blog/tags/Git/" />
+        <category term="分布式文件管理" scheme="http://gitee.com/mzcy3021213/blog/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/" />
+        <updated>2021-11-25T13:36:15.659Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitee.com/mzcy3021213/blog/2021/11/25/hello-world/</id>
+        <title>Hello World</title>
+        <link rel="alternate" href="http://gitee.com/mzcy3021213/blog/2021/11/25/hello-world/"/>
+        <content type="html">&lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
+</content>
+        <updated>2021-11-25T09:41:20.160Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitee.com/mzcy3021213/blog/2021/11/17/financial/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/</id>
+        <title>计量经济学</title>
+        <link rel="alternate" href="http://gitee.com/mzcy3021213/blog/2021/11/17/financial/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+        <content type="html">&lt;h1 id=&#34;计量经济学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计量经济学&#34;&gt;#&lt;/a&gt; 计量经济学&lt;/h1&gt;
+&lt;h2 id=&#34;第一章-回归分析概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章-回归分析概述&#34;&gt;#&lt;/a&gt; 第一章 回归分析概述&lt;/h2&gt;
+&lt;h5 id=&#34;回归意义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#回归意义&#34;&gt;#&lt;/a&gt; 回归意义&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/lg4IXU1wWRC67hZ.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/MZ8Vp9nt4fX7lkJ.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;回归与相关：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/PxielCOmpRfbqyN.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;收入消费理论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#收入消费理论&#34;&gt;#&lt;/a&gt; 收入消费理论&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/95lEFbp8m2edJ4L.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;回归函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#回归函数&#34;&gt;#&lt;/a&gt; 回归函数&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/tIJFbTGWNjZKdOo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;随机干扰项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#随机干扰项&#34;&gt;#&lt;/a&gt; 随机干扰项&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/8lTXmuOfDIxH4is.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/FSRanUW4T1PvVAf.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;随机干扰项：真实值与样本回归方程的估计值的差；&lt;/p&gt;
+&lt;p&gt;残差：真实值与总体回归方程的估计值的差；&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/gvakubKz87x9RJC.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;偏回归系数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#偏回归系数&#34;&gt;#&lt;/a&gt; 偏回归系数&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/FNMEmIkLrxGo2ey.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;第二章-普通最小二乘法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第二章-普通最小二乘法&#34;&gt;#&lt;/a&gt; 第二章 普通最小二乘法&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/vqW5PzATBiaMlVN.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;线性回归模型的基本假设&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性回归模型的基本假设&#34;&gt;#&lt;/a&gt; 线性回归模型的基本假设&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/gu1wofclGLhIq2z.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;以上假设也称为线性回归模型的经典假设或高斯（Gauss）假设，满足该假设的线性回归模型，也称为经典线性回归模型（Classical Linear Regression Model, CLRM）。&lt;/p&gt;
+&lt;p&gt;线性回归是指对估计参数为线性的一种回归（即估计参数只以一次方出现），对自变量 X 可以是或不是线性的；&lt;/p&gt;
+&lt;h5 id=&#34;估计量的性质&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#估计量的性质&#34;&gt;#&lt;/a&gt; 估计量的性质&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/a3hnsrOPjAREN8F.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;判定系数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#判定系数&#34;&gt;#&lt;/a&gt; 判定系数&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/DtSXMBYC3nJsWLa.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/EqkdrMU4WJvm8hs.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;判定系数&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;R&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;R^2&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8141079999999999em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.00773em;&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8141079999999999em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 是解释变量个数的非减函数，即增加解释变量，&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;R&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;R^2&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8141079999999999em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.00773em;&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8141079999999999em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 会增加或不变，但增加解释变量会降低自由度（自由度：观测样本个数减去待估参数的个数）；&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/Y4FOra61gJHhRS3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;第三章-假设检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三章-假设检验&#34;&gt;#&lt;/a&gt; 第三章 假设检验&lt;/h2&gt;
+&lt;h5 id=&#34;假设检验的基本原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#假设检验的基本原理&#34;&gt;#&lt;/a&gt; 假设检验的基本原理&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/WjMSIQUne9pPsYo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;当拒绝原假设时，通常表述为统计上显著；反之，统计上不显著；&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/EFKksmS65WVPIC2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;假设检验的两种常用方法：&lt;br /&gt;
+1. 置信区间法&lt;br /&gt;
+ 2. 显著性检验法&lt;/p&gt;
+&lt;h5 id=&#34;置信区间法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#置信区间法&#34;&gt;#&lt;/a&gt; 置信区间法&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/5x8IahOWrkRKoQc.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/i8ZbtVQovUsgLuX.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Std.Error ：参数方差&lt;/p&gt;
+&lt;h5 id=&#34;显著性检验法t检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#显著性检验法t检验&#34;&gt;#&lt;/a&gt; 显著性检验法（t 检验）&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/bX73INsLDPOqAu6.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/Zf32OkbeEqPrahM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/M39OvGYgtULlziS.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Prob. ：对应其左侧一列 t 统计量的概率（即一般情况下，p&amp;lt;0.05 则认为其显著）&lt;/p&gt;
+&lt;h5 id=&#34;f检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#f检验&#34;&gt;#&lt;/a&gt; F 检验&lt;/h5&gt;
+&lt;p&gt;对多个假设的联立检验或对线性约束的假设检验不能用 t 检验，只能用 F 检验&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/Y7K2zr6xioIWbMm.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Prob (F-statistic): 模型的显著性，小于 0.05 为显著。&lt;/p&gt;
+&lt;p&gt;Wald Test（对参数进行具体检验）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/DvUnFMxtTlOg1WE.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Probability: 假设正确的概率，小于 0.05 时拒绝原假设；&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/NBQjgVo4fyRY5SO.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/jOTArwSyvVzL35C.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;正态性检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#正态性检验&#34;&gt;#&lt;/a&gt; 正态性检验&lt;/h5&gt;
+&lt;p&gt;正态性的雅克－贝拉（Jarque－Bera）检验：&lt;br /&gt;
+&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117181202547.png&#34; alt=&#34;image-20211117181202547&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117181407897.png&#34; alt=&#34;image-20211117181407897&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;第四章-模型设定&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四章-模型设定&#34;&gt;#&lt;/a&gt; 第四章 模型设定&lt;/h2&gt;
+&lt;h5 id=&#34;遗漏变量设定偏误&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#遗漏变量设定偏误&#34;&gt;#&lt;/a&gt; 遗漏变量（设定偏误）&lt;/h5&gt;
+&lt;p&gt;参数估计量有偏且符号不一致；&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117182245432.png&#34; alt=&#34;image-20211117182245432&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;不相干变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#不相干变量&#34;&gt;#&lt;/a&gt; 不相干变量&lt;/h5&gt;
+&lt;p&gt;参数估计量无偏但非有效（方差增大，t 检验失效，拟合优度降低）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117182521737.png&#34; alt=&#34;image-20211117182521737&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;模型选择准则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模型选择准则&#34;&gt;#&lt;/a&gt; 模型选择准则&lt;/h5&gt;
+&lt;p&gt;四个重要的模型设定准则：&lt;/p&gt;
+&lt;p&gt;1. 理论：变量在方程中的含义是不是含糊不清的，从理论上看是不是合理的？&lt;br /&gt;
+2.t 检验：解释变量参数的估计值在预期假设下是不是显著的？&lt;br /&gt;
+3. 调整的判定系数&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mover accent=&#34;true&#34;&gt;&lt;msup&gt;&lt;mi&gt;R&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo stretchy=&#34;true&#34;&gt;‾&lt;/mo&gt;&lt;/mover&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\overline{R^2}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.940108em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord overline&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.940108em;&#34;&gt;&lt;span style=&#34;top:-3em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.00773em;&#34;&gt;R&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.740108em;&#34;&gt;&lt;span style=&#34;top:-2.9890000000000003em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.860108em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;overline-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 或 AIC 和 SC: 将变量加入方程后，整体拟合优度是否有所改善？&lt;br /&gt;
+4. 偏误：将变量加入方程后，其他变量参数是否有显著变化？&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117183246526.png&#34; alt=&#34;image-20211117183246526&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117183258094.png&#34; alt=&#34;image-20211117183258094&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117183311022.png&#34; alt=&#34;image-20211117183311022&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;函数形式的选择&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数形式的选择&#34;&gt;#&lt;/a&gt; 函数形式的选择&lt;/h5&gt;
+&lt;p&gt;可线性化的非线性函数形式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;指数函数&lt;/li&gt;
+&lt;li&gt;对数函数&lt;/li&gt;
+&lt;li&gt;反函数形式&lt;/li&gt;
+&lt;li&gt;多项式形式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;第五章-多重共线性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第五章-多重共线性&#34;&gt;#&lt;/a&gt; 第五章 多重共线性&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117184006808.png&#34; alt=&#34;image-20211117184006808&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;多重共线性是一个程度问题而不是有无的问题，目前还没有一个被普遍接受的真正意义的检验多重共线性的统计量。&lt;/p&gt;
+&lt;h5 id=&#34;不完全多重共线性的特征&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#不完全多重共线性的特征&#34;&gt;#&lt;/a&gt; 不完全多重共线性的特征&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;偏回归系数的 t 值会降低，倾向于统计上不显著；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;估计量（偏回归系数）对模型设定的变化非常敏感，估计系数可能出现非预期的符号或难以置信的数值；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;虽然系数不显著，但总的拟合优度 R2 却可能非常高；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可能出现每个偏回归系数的 t 值都不显著，但回归方程的 F 值却很显著。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;多重共线性的检验与补救&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多重共线性的检验与补救&#34;&gt;#&lt;/a&gt; 多重共线性的检验与补救&lt;/h5&gt;
+&lt;p&gt;判断方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;变量之间的相关系数&lt;/li&gt;
+&lt;li&gt;方差膨胀因子（VIF）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;补救方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;剔除支配变量：支配变量 (dominant variable): 与被解释变量高度相关，以致于完全掩盖了方程中其他解释变量的影响 (如销售量与销售额)；&lt;/li&gt;
+&lt;li&gt;增加样本容量：样本越大，估计越精确；&lt;/li&gt;
+&lt;li&gt;剔除多余的变量：潜在的理论假设作为剔除的主要依据；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;差分法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#差分法&#34;&gt;#&lt;/a&gt; 差分法&lt;/h6&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117185314835.png&#34; alt=&#34;image-20211117185314835&#34; /&gt;&lt;/p&gt;
+&lt;h6 id=&#34;比率转换法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#比率转换法&#34;&gt;#&lt;/a&gt; 比率转换法&lt;/h6&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117185344418.png&#34; alt=&#34;image-20211117185344418&#34; /&gt;&lt;/p&gt;
+&lt;h6 id=&#34;无为而治法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#无为而治法&#34;&gt;#&lt;/a&gt; 无为而治法&lt;/h6&gt;
+&lt;p&gt;剔除本应包含的解释变量会导致设定偏误。与遗漏变量造成的有偏估计相比较，较低的 t 统计值 (显著性) 似乎只是一个次要的问题。&lt;br /&gt;
+只有当后果很严重 (参数估计值出现非预期的符号)，才应该采取其他补救措施。&lt;/p&gt;
+&lt;h2 id=&#34;第六章-序列相关性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第六章-序列相关性&#34;&gt;#&lt;/a&gt; 第六章 序列相关性&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117193143236.png&#34; alt=&#34;image-20211117193143236&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;自相关系数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自相关系数&#34;&gt;#&lt;/a&gt; 自相关系数&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117193232421.png&#34; alt=&#34;image-20211117193232421&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;序列相关性的特征&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序列相关性的特征&#34;&gt;#&lt;/a&gt; 序列相关性的特征&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117193513581.png&#34; alt=&#34;image-20211117193513581&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117193537027.png&#34; alt=&#34;image-20211117193537027&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117193554117.png&#34; alt=&#34;image-20211117193554117&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;序列相关性的检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序列相关性的检验&#34;&gt;#&lt;/a&gt; 序列相关性的检验&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;图示法&lt;/li&gt;
+&lt;li&gt;回归检验法：&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117193801135.png&#34; alt=&#34;image-20211117193801135&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;DW 检验法&lt;/li&gt;
+&lt;li&gt;拉格朗日乘数检验&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;杜宾-瓦森dw检验法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#杜宾-瓦森dw检验法&#34;&gt;#&lt;/a&gt; 杜宾 - 瓦森（DW）检验法&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117193921540.png&#34; alt=&#34;image-20211117193921540&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117193954772.png&#34; alt=&#34;image-20211117193954772&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;DW 检验临界值 (&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;L&lt;/mi&gt;&lt;/msub&gt;&lt;mtext&gt;、&lt;/mtext&gt;&lt;msub&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;U&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;d_L、d_U&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.84444em;vertical-align:-0.15em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.32833099999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;L&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;、&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.32833099999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.10903em;&#34;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;) 与三个参数有关：&lt;br /&gt;
+①检验水平&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;α&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\alpha&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.43056em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.0037em;&#34;&gt;α&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，②样本容量 n , ③原回归模型中解释变量个数 k（不包括常数项）。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117194020024.png&#34; alt=&#34;image-20211117194020024&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;当 DW 值落在 “不确定” 区域时，两种处理方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;加大样本容量或重新选取样本，重作 DW 检验。有时 DW 值会离开不确定区；&lt;/li&gt;
+&lt;li&gt;选用其它检验方法。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;拉格朗日乘数检验gblm&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拉格朗日乘数检验gblm&#34;&gt;#&lt;/a&gt; 拉格朗日乘数检验（GB/LM）&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117210016193.png&#34; alt=&#34;image-20211117210016193&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;序列相关的补救&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序列相关的补救&#34;&gt;#&lt;/a&gt; 序列相关的补救&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117210522582.png&#34; alt=&#34;image-20211117210522582&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;第七章-异方差性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第七章-异方差性&#34;&gt;#&lt;/a&gt; 第七章 异方差性&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117190423214.png&#34; alt=&#34;image-20211117190423214&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;非纯异方差：由模型设定偏误导致（如遗漏变量）&lt;/p&gt;
+&lt;h5 id=&#34;异方差性的特征&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#异方差性的特征&#34;&gt;#&lt;/a&gt; 异方差性的特征&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117191159503.png&#34; alt=&#34;image-20211117191159503&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;异方差的检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#异方差的检验&#34;&gt;#&lt;/a&gt; 异方差的检验&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;图解法&lt;/li&gt;
+&lt;li&gt;帕克检验&lt;/li&gt;
+&lt;li&gt;怀特检验（WHite）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;异方差的补救&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#异方差的补救&#34;&gt;#&lt;/a&gt; 异方差的补救&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117191826858.png&#34; alt=&#34;image-20211117191826858&#34; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先考虑采用重新定义变量的方式&lt;/li&gt;
+&lt;li&gt;大样本情况：White 调整法&lt;/li&gt;
+&lt;li&gt;若能找到明确的比列因子（权重），则采用 WLS&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;加权最小二乘法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#加权最小二乘法&#34;&gt;#&lt;/a&gt; 加权最小二乘法&lt;/h6&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117191914875.png&#34; alt=&#34;image-20211117191914875&#34; /&gt;&lt;/p&gt;
+&lt;h6 id=&#34;white调整法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#white调整法&#34;&gt;#&lt;/a&gt; White 调整法&lt;/h6&gt;
+&lt;h6 id=&#34;重新定义新变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重新定义新变量&#34;&gt;#&lt;/a&gt; 重新定义新变量&lt;/h6&gt;
+&lt;h2 id=&#34;第八章-虚拟变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第八章-虚拟变量&#34;&gt;#&lt;/a&gt; 第八章 虚拟变量&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117211222487.png&#34; alt=&#34;image-20211117211222487&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;虚拟变量既可以作为解释变量，又可以作为被解释变量；&lt;/p&gt;
+&lt;h5 id=&#34;线性概率模型lpm&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性概率模型lpm&#34;&gt;#&lt;/a&gt; 线性概率模型（LPM)&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117211703702.png&#34; alt=&#34;image-20211117211703702&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;logit模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#logit模型&#34;&gt;#&lt;/a&gt; Logit 模型&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117212414467.png&#34; alt=&#34;image-20211117212414467&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117212456871.png&#34; alt=&#34;image-20211117212456871&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;probit模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#probit模型&#34;&gt;#&lt;/a&gt; Probit 模型&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117212936450.png&#34; alt=&#34;image-20211117212936450&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20211117213005030.png&#34; alt=&#34;image-20211117213005030&#34; /&gt;&lt;/p&gt;
+</content>
+        <category term="金融" scheme="http://gitee.com/mzcy3021213/blog/categories/financial/" />
+        <category term="金融" scheme="http://gitee.com/mzcy3021213/blog/tags/%E9%87%91%E8%9E%8D/" />
+        <category term="计量经济学" scheme="http://gitee.com/mzcy3021213/blog/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/" />
+        <category term="量化金融" scheme="http://gitee.com/mzcy3021213/blog/tags/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D/" />
+        <updated>2021-11-17T07:52:54.837Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitee.com/mzcy3021213/blog/2021/11/08/front-end/HTML/</id>
+        <title>HTML学习</title>
+        <link rel="alternate" href="http://gitee.com/mzcy3021213/blog/2021/11/08/front-end/HTML/"/>
+        <content type="html">&lt;h1 id=&#34;html学习&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#html学习&#34;&gt;#&lt;/a&gt; HTML 学习&lt;/h1&gt;
+&lt;h2 id=&#34;1标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1标签&#34;&gt;#&lt;/a&gt; 1. 标签&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;标题标签&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;一级标题&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;h1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;h2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;二级标题&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;h2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/08/xnqcyYpleXIdgH6.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;段落标签&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;段落标签&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;换行标签 (无额外行间距)&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;br&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文本标签&lt;/p&gt;
+&lt;h6 id=&#34;加粗标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#加粗标签&#34;&gt;#&lt;/a&gt; 加粗标签&lt;/h6&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;strong&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;强调标签&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;strong&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;b&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;字体加粗标签&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;b&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;倾斜标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#倾斜标签&#34;&gt;#&lt;/a&gt; 倾斜标签&lt;/h6&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;em&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;倾斜标签&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;em&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;i&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;倾斜标签&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;i&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;删除线标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#删除线标签&#34;&gt;#&lt;/a&gt; 删除线标签&lt;/h6&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;del&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;删除线&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;del&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;s&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;删除线&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;s&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;下划线标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下划线标签&#34;&gt;#&lt;/a&gt; 下划线标签&lt;/h6&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;ins&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;下划线&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;ins&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;u&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;下划线&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;u&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;容器标签&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;占一行,大盒子&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;span&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;小盒子&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;span&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;图像标签&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;img.jpg&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;替换文字&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;提示文本&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/08/RrEA6wMyfKDtLeV.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;超链接标签&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;外部链接&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token attr-name&#34;&gt;target&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;_blank&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;超链接&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;#&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;空链接&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;下载文件路径&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;下载链接&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/08/EQmq2jcyLIK4pOu.png&#34; alt=&#34;&#34; /&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/08/nOkz9CSiaysflm2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;注释标签&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- 注释标签 --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;表格标签&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;table&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;tr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;th&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;姓名&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;th&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;th&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;性别&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;th&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;tr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;tr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;td&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;刘德华&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;td&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;td&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;男&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;td&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;tr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;table&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;表格属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表格属性&#34;&gt;#&lt;/a&gt; 表格属性&lt;/h6&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/08/iY3BahCZz2gpNFM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h6 id=&#34;表头标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表头标签&#34;&gt;#&lt;/a&gt; 表头标签&lt;/h6&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;th&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;表头&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;th&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;表格结构标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表格结构标签&#34;&gt;#&lt;/a&gt; 表格结构标签&lt;/h6&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;thead&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;表格头部区域，，必须有表头标签&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;thead&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;tbody&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;tbody&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;合并单元格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#合并单元格&#34;&gt;#&lt;/a&gt; 合并单元格&lt;/h6&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- 跨列 --&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;td&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;colspan&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;2&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;td&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- 跨行 --&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;td&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;2&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;td&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;列表标签&lt;/p&gt;
+&lt;h6 id=&#34;无序列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#无序列表&#34;&gt;#&lt;/a&gt; 无序列表&lt;/h6&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;ul&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;有序列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#有序列表&#34;&gt;#&lt;/a&gt; 有序列表&lt;/h6&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;ol&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;ol&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;自定义列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自定义列表&#34;&gt;#&lt;/a&gt; 自定义列表&lt;/h6&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;dl&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;dt&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;dt&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;dd&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;dd&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;dd&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;dd&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;dl&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;&amp;lt;!--dl 里只能有 dt 与 dd--&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;表单标签&lt;/p&gt;
+&lt;h6 id=&#34;表单域属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表单域属性&#34;&gt;#&lt;/a&gt; 表单域属性&lt;/h6&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/ltxkBT3yagh2dYD.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h6 id=&#34;表单元素属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表单元素属性&#34;&gt;#&lt;/a&gt; 表单元素属性&lt;/h6&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5C%E4%BD%A0%E7%8C%9C%5CDesktop%5CdZXF5kemCYLIqTz.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/XvYQN3MFDozjCah.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h6 id=&#34;label标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#label标签&#34;&gt;#&lt;/a&gt; &lt;label&gt;标签&lt;/h6&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/QXcVg29NSpdLrW7.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h6 id=&#34;select标签&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#select标签&#34;&gt;#&lt;/a&gt; &lt;select&gt;标签&lt;/h6&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/09/zb9qHa43QWVOEBs.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2特殊字符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2特殊字符&#34;&gt;#&lt;/a&gt; 2. 特殊字符&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/08/ioQNV32cBLfekuw.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</content>
+        <category term="前端" scheme="http://gitee.com/mzcy3021213/blog/categories/front-end/" />
+        <category term="前端" scheme="http://gitee.com/mzcy3021213/blog/tags/%E5%89%8D%E7%AB%AF/" />
+        <updated>2021-11-08T07:40:53.266Z</updated>
+    </entry>
+    <entry>
+        <id>http://gitee.com/mzcy3021213/blog/2021/09/11/hybrid-learning/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+        <title>Typora使用教程</title>
+        <link rel="alternate" href="http://gitee.com/mzcy3021213/blog/2021/09/11/hybrid-learning/Typora%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+        <content type="html">&lt;h1 id=&#34;typora使用教程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typora使用教程&#34;&gt;#&lt;/a&gt; Typora 使用教程&lt;/h1&gt;
+&lt;h2 id=&#34;1常用快捷键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1常用快捷键&#34;&gt;#&lt;/a&gt; 1. 常用快捷键&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;加粗：&lt;strong&gt;ctrl+B&lt;/strong&gt; （bold）&lt;/li&gt;
+&lt;li&gt;字体倾斜：&lt;strong&gt;ctrl+I&lt;/strong&gt; （incline）&lt;/li&gt;
+&lt;li&gt;下划线：&lt;strong&gt;ctrl+U&lt;/strong&gt; （under）&lt;/li&gt;
+&lt;li&gt;多级标题：&lt;strong&gt;ctrl+1~6&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;有序列表：&lt;strong&gt;ctrl+shift+[&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;无序列表：&lt;strong&gt;ctrl+shift+]&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;降级：&lt;strong&gt;Tab&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;升级：&lt;strong&gt;shift+Tab&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;插入链接：&lt;strong&gt;ctrl+K&lt;/strong&gt; （link）&lt;/li&gt;
+&lt;li&gt;插入公式：&lt;strong&gt;ctrl+shift+M&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;行内代码：&lt;strong&gt;ctrl+shift+K&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;插入图片：&lt;strong&gt;ctrl+shift+I&lt;/strong&gt; （image）&lt;/li&gt;
+&lt;li&gt;创建表格：&lt;strong&gt;ctrl+T&lt;/strong&gt; （table）&lt;/li&gt;
+&lt;li&gt;选中一行：&lt;strong&gt;ctrl+L&lt;/strong&gt; （line）&lt;/li&gt;
+&lt;li&gt;选中一字：&lt;strong&gt;ctrl+D&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;选中相同格式的文字：&lt;strong&gt;ctrl+E&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;搜索：&lt;strong&gt;ctrl+F&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;搜索并替换：&lt;strong&gt;ctrl+H&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;删除线：&lt;strong&gt;Alt+shift+5&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;引用：&lt;strong&gt;ctrl+shift+Q&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;生成目录：&lt;strong&gt;[TOC]+Enter&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;分割线：&lt;strong&gt;---+Enter&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2其它技巧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2其它技巧&#34;&gt;#&lt;/a&gt; 2. 其它技巧&lt;/h2&gt;
+&lt;h3 id=&#34;字体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字体&#34;&gt;#&lt;/a&gt; 字体&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;斜体：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;*斜体字体1*，_斜体字体2_
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;斜体字体 1&lt;/em&gt;，&lt;em&gt;斜体字体 2&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加粗：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;**加粗字体1**，__加粗字体2__
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;加粗字体 1&lt;/strong&gt;，&lt;strong&gt;加粗字体 2&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除线：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;~~需要删除的文字~~
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;s&gt;需要删除的文字&lt;/s&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;大高亮&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;==高亮==
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;mark&gt;高亮&lt;/mark&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;小高亮&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;`高亮`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;高亮&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;段落&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#段落&#34;&gt;#&lt;/a&gt; 段落&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;更小行间距 ：&lt;strong&gt;shift+Enter&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;打断线：&lt;br/&gt;打断线后的内容将自动换行&lt;/li&gt;
+&lt;li&gt;引用：&lt;strong&gt;&amp;gt;+Space + 文字&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;特殊符号&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#特殊符号&#34;&gt;#&lt;/a&gt; 特殊符号&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;&lt;/code&gt; ：＆ｌｔ；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;＆&lt;/code&gt; ：＆ａｍｐ；&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="杂学" scheme="http://gitee.com/mzcy3021213/blog/categories/hybrid-learning/" />
+        <category term="Typora" scheme="http://gitee.com/mzcy3021213/blog/tags/Typora/" />
+        <category term="markdown" scheme="http://gitee.com/mzcy3021213/blog/tags/markdown/" />
+        <updated>2021-09-11T08:07:23.057Z</updated>
+    </entry>
+</feed>
