@@ -359,9 +359,20 @@
 &lt;/ol&gt;
 &lt;h3 id=&#34;特殊符号&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#特殊符号&#34;&gt;#&lt;/a&gt; 特殊符号&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;&lt;/code&gt; ：＆ｌｔ；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;＆&lt;/code&gt; ：＆ａｍｐ；&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;&lt;/code&gt; ：＆ｌｔ；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;＆&lt;/code&gt; ：＆ａｍｐ；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;
+&lt;p&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; disabled=&#34;true&#34; /&gt;&lt;label for=&#34;cbx_0&#34;&gt; 待办事项 :&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-&lt;/code&gt; + &lt;code&gt;空格&lt;/code&gt;  + &lt;code&gt;[&lt;/code&gt; + &lt;code&gt;空格&lt;/code&gt;  + &lt;code&gt;]&lt;/code&gt; + &lt;code&gt;空格&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
  ]]></description>
         </item>
         <item>
