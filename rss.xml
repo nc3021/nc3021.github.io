@@ -445,7 +445,7 @@
 &lt;h5 id=&#34;估计量的性质&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#估计量的性质&#34;&gt;#&lt;/a&gt; 估计量的性质&lt;/h5&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/a3hnsrOPjAREN8F.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;​	这三个准则被称作估计量的小样本性质，拥有这类性质的估计量称为最佳线性无偏估计量 (best liner unbiased estimator BLUE);&lt;/p&gt;
-&lt;h5 id=&#34;高斯-马尔可夫定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高斯-马尔可夫定理&#34;&gt;#&lt;/a&gt; 高斯 - 马尔可夫定理&lt;/h5&gt;
+&lt;h4 id=&#34;高斯-马尔可夫定理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高斯-马尔可夫定理&#34;&gt;#&lt;/a&gt; 高斯 - 马尔可夫定理&lt;/h4&gt;
 &lt;p&gt;​	在给定经典线性回归的假定下，最小二乘估计量是具有最小方差的线性无偏估计量即 BLUE。证明：略&lt;/p&gt;
 &lt;h3 id=&#34;判定系数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#判定系数&#34;&gt;#&lt;/a&gt; 判定系数&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/DtSXMBYC3nJsWLa.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
