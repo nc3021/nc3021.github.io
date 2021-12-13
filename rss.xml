@@ -8,7 +8,7 @@
         <author>
           <name>页川木子</name>
         </author>
-        <description>   只要立刻开始，      一切都还没晚</description>
+        <description>只要立刻开始一切都还没晚</description>
         <language>zh-CN</language>
         <pubDate>Wed, 08 Dec 2021 19:17:11 +0800</pubDate>
         <lastBuildDate>Wed, 08 Dec 2021 19:17:11 +0800</lastBuildDate>
@@ -364,7 +364,7 @@
             <category term="量化金融" scheme="https://nc3021.github.io/tags/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D/" />
             <pubDate>Fri, 26 Nov 2021 19:30:49 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;计量经济学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计量经济学&#34;&gt;#&lt;/a&gt; 计量经济学&lt;/h1&gt;
-&lt;h2 id=&#34;引论3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引论3&#34;&gt;#&lt;/a&gt; 引论 3&lt;/h2&gt;
+&lt;h2 id=&#34;引论4&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引论4&#34;&gt;#&lt;/a&gt; 引论 4&lt;/h2&gt;
 &lt;h3 id=&#34;计量经济学的用途&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计量经济学的用途&#34;&gt;#&lt;/a&gt; 计量经济学的用途&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -396,7 +396,7 @@
 &lt;h3 id=&#34;回归意义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#回归意义&#34;&gt;#&lt;/a&gt; 回归意义&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/lg4IXU1wWRC67hZ.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/MZ8Vp9nt4fX7lkJ.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h5 id=&#34;统计关系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#统计关系&#34;&gt;#&lt;/a&gt; 统计关系&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;统计关系&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;确定关系：确定变量之间的函数关系&lt;/p&gt;
@@ -406,7 +406,7 @@
 &lt;p&gt;计量经济学研究的是统计关系。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id=&#34;回归与相关&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#回归与相关&#34;&gt;#&lt;/a&gt; 回归与相关&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;回归与相关&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;​	回归与相关的基本不同点在于，回归分析将因变量当作统计的、随机的，而自变量则被看作是固定的或非随机的；而相关分析将两个变量都看作随机的，具有对称性；&lt;/p&gt;
 &lt;p&gt;​	事实上，将自变量看作是随机变量不会影响大部分计量经济学理论的接过（特别是大样本情况下）；&lt;/p&gt;
 &lt;p&gt;​	在进行回归分析之前，一般先做相关分析。&lt;/p&gt;
@@ -414,7 +414,7 @@
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/95lEFbp8m2edJ4L.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;回归函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#回归函数&#34;&gt;#&lt;/a&gt; 回归函数&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/tIJFbTGWNjZKdOo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h5 id=&#34;随机干扰项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#随机干扰项&#34;&gt;#&lt;/a&gt; 随机干扰项&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;随机干扰项&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/8lTXmuOfDIxH4is.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/FSRanUW4T1PvVAf.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -433,7 +433,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/gvakubKz87x9RJC.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h5 id=&#34;偏回归系数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#偏回归系数&#34;&gt;#&lt;/a&gt; 偏回归系数&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;偏回归系数&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/FNMEmIkLrxGo2ey.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;第二章-普通最小二乘法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第二章-普通最小二乘法&#34;&gt;#&lt;/a&gt; 第二章 普通最小二乘法&lt;/h2&gt;
