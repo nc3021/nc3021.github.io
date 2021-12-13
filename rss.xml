@@ -400,6 +400,7 @@
 &lt;p&gt;&lt;a href=&#34;https://nc3021.github.io/2021/11/26/financial/Eviews/&#34;&gt;查看 EViews 操作使用说明文档&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;第一章-回归分析概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章-回归分析概述&#34;&gt;#&lt;/a&gt; 第一章 回归分析概述&lt;/h2&gt;
+&lt;p&gt;1&lt;/p&gt;
 &lt;h3 id=&#34;回归意义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#回归意义&#34;&gt;#&lt;/a&gt; 回归意义&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/lg4IXU1wWRC67hZ.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/MZ8Vp9nt4fX7lkJ.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -583,11 +584,11 @@
 &lt;li&gt;增加样本容量：样本越大，估计越精确；&lt;/li&gt;
 &lt;li&gt;剔除多余的变量：潜在的理论假设作为剔除的主要依据；&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h6 id=&#34;差分法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#差分法&#34;&gt;#&lt;/a&gt; 差分法&lt;/h6&gt;
+&lt;h5 id=&#34;差分法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#差分法&#34;&gt;#&lt;/a&gt; 差分法&lt;/h5&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212144450.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h6 id=&#34;比率转换法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#比率转换法&#34;&gt;#&lt;/a&gt; 比率转换法&lt;/h6&gt;
+&lt;h5 id=&#34;比率转换法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#比率转换法&#34;&gt;#&lt;/a&gt; 比率转换法&lt;/h5&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212144501.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h6 id=&#34;无为而治法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#无为而治法&#34;&gt;#&lt;/a&gt; 无为而治法&lt;/h6&gt;
+&lt;h5 id=&#34;无为而治法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#无为而治法&#34;&gt;#&lt;/a&gt; 无为而治法&lt;/h5&gt;
 &lt;p&gt;​	剔除本应包含的解释变量会导致设定偏误。与遗漏变量造成的有偏估计相比较，较低的 t 统计值 (显著性) 似乎只是一个次要的问题。&lt;br /&gt;
 ​	只有当后果很严重 (参数估计值出现非预期的符号)，才应该采取其他补救措施。&lt;/p&gt;
 &lt;hr /&gt;
