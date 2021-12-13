@@ -8,18 +8,11 @@
         <author>
           <name>YeChuanMuZi</name>
         </author>
-        <description>只要从现在开始，一切都还没晚</description>
+        <description>   只要立刻开始，      一切都还没晚</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 13 Dec 2021 13:56:01 +0800</pubDate>
-        <lastBuildDate>Mon, 13 Dec 2021 13:56:01 +0800</lastBuildDate>
+        <pubDate>Wed, 08 Dec 2021 19:17:11 +0800</pubDate>
+        <lastBuildDate>Wed, 08 Dec 2021 19:17:11 +0800</lastBuildDate>
         <category term="学习，成长，编程" />
-        <item>
-            <guid isPermalink="true">https://nc3021.github.io/2021/12/13/financial/Untitled/</guid>
-            <title></title>
-            <link>https://nc3021.github.io/2021/12/13/financial/Untitled/</link>
-            <pubDate>Mon, 13 Dec 2021 13:56:01 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
         <item>
             <guid isPermalink="true">https://nc3021.github.io/2021/12/08/front-end/JavaScript/</guid>
             <title>JavaScript学习</title>
@@ -371,7 +364,7 @@
             <category term="量化金融" scheme="https://nc3021.github.io/tags/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D/" />
             <pubDate>Fri, 26 Nov 2021 19:30:49 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;计量经济学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计量经济学&#34;&gt;#&lt;/a&gt; 计量经济学&lt;/h1&gt;
-&lt;h2 id=&#34;引论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引论&#34;&gt;#&lt;/a&gt; 引论&lt;/h2&gt;
+&lt;h2 id=&#34;引论3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引论3&#34;&gt;#&lt;/a&gt; 引论 3&lt;/h2&gt;
 &lt;h3 id=&#34;计量经济学的用途&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计量经济学的用途&#34;&gt;#&lt;/a&gt; 计量经济学的用途&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -400,7 +393,6 @@
 &lt;p&gt;&lt;a href=&#34;https://nc3021.github.io/2021/11/26/financial/Eviews/&#34;&gt;查看 EViews 操作使用说明文档&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;第一章-回归分析概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章-回归分析概述&#34;&gt;#&lt;/a&gt; 第一章 回归分析概述&lt;/h2&gt;
-&lt;p&gt;2&lt;/p&gt;
 &lt;h3 id=&#34;回归意义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#回归意义&#34;&gt;#&lt;/a&gt; 回归意义&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/lg4IXU1wWRC67hZ.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/MZ8Vp9nt4fX7lkJ.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
