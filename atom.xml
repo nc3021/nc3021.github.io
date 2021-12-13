@@ -356,7 +356,7 @@
         <title>计量经济学</title>
         <link rel="alternate" href="https://nc3021.github.io/2021/11/26/financial/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
         <content type="html">&lt;h1 id=&#34;计量经济学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计量经济学&#34;&gt;#&lt;/a&gt; 计量经济学&lt;/h1&gt;
-&lt;h2 id=&#34;引论5&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引论5&#34;&gt;#&lt;/a&gt; 引论 5&lt;/h2&gt;
+&lt;h2 id=&#34;引论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引论&#34;&gt;#&lt;/a&gt; 引论&lt;/h2&gt;
 &lt;h3 id=&#34;计量经济学的用途&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计量经济学的用途&#34;&gt;#&lt;/a&gt; 计量经济学的用途&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -568,18 +568,18 @@
 &lt;li&gt;增加样本容量：样本越大，估计越精确；&lt;/li&gt;
 &lt;li&gt;剔除多余的变量：潜在的理论假设作为剔除的主要依据；&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5 id=&#34;差分法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#差分法&#34;&gt;#&lt;/a&gt; 差分法&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;差分法&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212144450.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h5 id=&#34;比率转换法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#比率转换法&#34;&gt;#&lt;/a&gt; 比率转换法&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;比率转换法&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212144501.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h5 id=&#34;无为而治法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#无为而治法&#34;&gt;#&lt;/a&gt; 无为而治法&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;无为而治法&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;​	剔除本应包含的解释变量会导致设定偏误。与遗漏变量造成的有偏估计相比较，较低的 t 统计值 (显著性) 似乎只是一个次要的问题。&lt;br /&gt;
 ​	只有当后果很严重 (参数估计值出现非预期的符号)，才应该采取其他补救措施。&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;第六章-序列相关性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第六章-序列相关性&#34;&gt;#&lt;/a&gt; 第六章 序列相关性&lt;/h2&gt;
 &lt;h3 id=&#34;序列相关性的概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序列相关性的概念&#34;&gt;#&lt;/a&gt; 序列相关性的概念&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212145308.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h5 id=&#34;自相关系数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自相关系数&#34;&gt;#&lt;/a&gt; 自相关系数&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;自相关系数&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212152252.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;序列相关性的类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序列相关性的类型&#34;&gt;#&lt;/a&gt; 序列相关性的类型&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;非纯序列相关：&lt;/strong&gt;&lt;/p&gt;
@@ -617,7 +617,7 @@
 &lt;p&gt;&lt;a href=&#34;#GB&#34;&gt;拉格朗日乘数检验（GB/LM）&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id=&#34;span-iddw杜宾-瓦森dw检验法span&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#span-iddw杜宾-瓦森dw检验法span&#34;&gt;#&lt;/a&gt; &lt;span id=&#39;DW&#39;&gt;杜宾 - 瓦森（DW）检验法&lt;/span&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212164447.png&#34; alt=&#34;&#34; /&gt;&lt;/h5&gt;
+&lt;p&gt;&lt;span id=&#39;DW&#39;&gt;&lt;strong&gt;杜宾 - 瓦森（DW）检验法&lt;/strong&gt;&lt;/span&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212164447.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212164516.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;DW 检验临界值 (&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;L&lt;/mi&gt;&lt;/msub&gt;&lt;mtext&gt;、&lt;/mtext&gt;&lt;msub&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;U&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;d_L、d_U&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.84444em;vertical-align:-0.15em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.32833099999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;L&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;、&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.32833099999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.10903em;&#34;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;) 与三个参数有关：&lt;br /&gt;
 ①检验水平&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;α&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\alpha&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.43056em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.0037em;&#34;&gt;α&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，②样本容量 n , ③原回归模型中解释变量个数 k（不包括常数项）。&lt;/p&gt;
@@ -628,7 +628,7 @@
 &lt;li&gt;加大样本容量或重新选取样本，重作 DW 检验。有时 DW 值会离开不确定区；&lt;/li&gt;
 &lt;li&gt;选用其它检验方法。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5 id=&#34;span-idgb拉格朗日乘数检验gblmspan&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#span-idgb拉格朗日乘数检验gblmspan&#34;&gt;#&lt;/a&gt; &lt;span id=&#39;GB&#39;&gt;拉格朗日乘数检验（GB/LM）&lt;/span&gt;&lt;/h5&gt;
+&lt;p&gt;&lt;span id=&#39;GB&#39;&gt;&lt;strong&gt;拉格朗日乘数检验&lt;/strong&gt;（GB/LM）&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;​	拉格朗日乘数检验克服了 DW 检验的缺陷，适合于高阶序列相关以及模型中存在滞后被解释变量的情形。&lt;br /&gt;
 它是由布劳殊（Breusch）与戈弗雷（Godfrey）于 1978 年提出的，也被称为 GB 检验。&lt;/p&gt;
 &lt;p&gt;​	对于模型 $$Y_i=\beta_0+\beta_1X_{1i}+\beta_2X_{2i}+\cdots+\beta_kX_{ki}+\mu$$&lt;/p&gt;
@@ -738,12 +738,12 @@
 &lt;li&gt;大样本情况：White 调整法&lt;/li&gt;
 &lt;li&gt;若能找到明确的比列因子（权重），则采用 WLS&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5 id=&#34;span-idwls加权最小二乘法wlsspan&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#span-idwls加权最小二乘法wlsspan&#34;&gt;#&lt;/a&gt; &lt;span id=&#39;WLS&#39;&gt;加权最小二乘法 (WLS)&lt;/span&gt;&lt;/h5&gt;
+&lt;p&gt;&lt;span id=&#39;WLS&#39;&gt;&lt;strong&gt;加权最小二乘法 (WLS)&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212191410.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;在实际操作中人们通常采用如下的经验方法：&lt;/p&gt;
 &lt;p&gt;​	不对原模型进行异方差检验，而是直接选择加权最小二乘法，尤其是采用截面数据作样本时。&lt;/p&gt;
 &lt;p&gt;​	如果确定存在异方差，则被有效地消除了；如果不存在异方差，则加权最小二乘法等价于普通最小二乘法。&lt;/p&gt;
-&lt;h5 id=&#34;span-idwhitewhite调整法span&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#span-idwhitewhite调整法span&#34;&gt;#&lt;/a&gt; &lt;span id=&#39;White&#39;&gt;White 调整法&lt;/span&gt;&lt;/h5&gt;
+&lt;p&gt;&lt;span id=&#39;White&#39;&gt;&lt;strong&gt;White 调整法&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;只修正标准误⽽不会改变系数的估计值；&lt;/li&gt;
 &lt;li&gt;在⼤样本估计中，效果更好；&lt;/li&gt;
@@ -751,7 +751,7 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;EViews 操作：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212192120.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h5 id=&#34;span-idln变换方程形式span&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#span-idln变换方程形式span&#34;&gt;#&lt;/a&gt; &lt;span id=&#39;ln&#39;&gt;变换方程形式&lt;/span&gt;&lt;/h5&gt;
+&lt;p&gt;&lt;span id=&#39;ln&#39;&gt;&lt;strong&gt;变换方程形式&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;一般采用对解释变量取对数的形式。&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;第八章-虚拟变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第八章-虚拟变量&#34;&gt;#&lt;/a&gt; 第八章 虚拟变量&lt;/h2&gt;
