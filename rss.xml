@@ -1,17 +1,25 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>Hexo</title>
+        <title>CourseOf Growth</title>
         <subtitle></subtitle>
         <icon>https://nc3021.github.io/images/favicon.ico</icon>
         <link>https://nc3021.github.io</link>
         <author>
-          <name>John Doe</name>
+          <name>YeChuanMuZi</name>
         </author>
-        <description></description>
+        <description>只要从现在开始，一切都还没晚</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 08 Dec 2021 19:17:11 +0800</pubDate>
-        <lastBuildDate>Wed, 08 Dec 2021 19:17:11 +0800</lastBuildDate>
+        <pubDate>Mon, 13 Dec 2021 13:56:01 +0800</pubDate>
+        <lastBuildDate>Mon, 13 Dec 2021 13:56:01 +0800</lastBuildDate>
+        <category term="学习，成长，编程" />
+        <item>
+            <guid isPermalink="true">https://nc3021.github.io/2021/12/13/financial/Untitled/</guid>
+            <title></title>
+            <link>https://nc3021.github.io/2021/12/13/financial/Untitled/</link>
+            <pubDate>Mon, 13 Dec 2021 13:56:01 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://nc3021.github.io/2021/12/08/front-end/JavaScript/</guid>
             <title>JavaScript学习</title>
@@ -477,19 +485,32 @@
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/Zf32OkbeEqPrahM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/17/M39OvGYgtULlziS.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Prob. ：对应其左侧一列 t 统计量的概率（即一般情况下，p&amp;lt;0.05 则认为其显著）&lt;/p&gt;
-&lt;p&gt;永远牢记：不能把 t 检验得出的统计显著性等同于理论的有效性。&lt;/p&gt;
-&lt;h5 id=&#34;柯布-道格拉斯生产函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#柯布-道格拉斯生产函数&#34;&gt;#&lt;/a&gt; 柯布 - 道格拉斯生产函数&lt;/h5&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211211170742.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;结论：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不能把 t 检验得出的统计显著性等同于理论的有效性；&lt;/li&gt;
+&lt;li&gt;t 检验不能检验相应变量的相对重要性；&lt;/li&gt;
+&lt;li&gt;随着样本容量的增大，t 值会越来越大；&lt;/li&gt;
+&lt;li&gt;对于一个超大规模的样本而言，t 检验没用任何意义，因为你几乎可以拒绝任何原假设；&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h3 id=&#34;f检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#f检验&#34;&gt;#&lt;/a&gt; F 检验&lt;/h3&gt;
-&lt;p&gt;对多个假设的联立检验或对线性约束的假设检验不能用 t 检验，只能用 F 检验&lt;/p&gt;
+&lt;p&gt;对多个假设的联立检验或对线性约束的假设检验不能用 t 检验，只能用 F 检验，可以检验方差的整体显著性。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/Y7K2zr6xioIWbMm.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Prob (F-statistic): 模型的显著性，小于 0.05 为显著。&lt;/p&gt;
 &lt;p&gt;Wald Test（对参数进行具体检验）&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/DvUnFMxtTlOg1WE.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Probability: 假设正确的概率，小于 0.05 时拒绝原假设；&lt;/p&gt;
+&lt;h5 id=&#34;柯布-道格拉斯生产函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#柯布-道格拉斯生产函数&#34;&gt;#&lt;/a&gt; 柯布 - 道格拉斯生产函数&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211211170742.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h5 id=&#34;邹检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#邹检验&#34;&gt;#&lt;/a&gt; 邹检验&lt;/h5&gt;
 &lt;p&gt;在时间序列回归中，模型的参数在整个样本期间内可能发生变化，邹检验由此而生，是 F 检验的重要应用。邹检验可以轻松推广到不止一次结构变动的情形。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EViews 操作&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/jOTArwSyvVzL35C.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;一些说明：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;邹检验的假定：两个子时期回归的误差项是独立且具有同方差的正态分布变量；&lt;/li&gt;
+&lt;li&gt;邹检验只告诉我们不同子时期的回归方程是否有差别，并没有告诉我们差别来自于截距、斜率还是二者兼有；&lt;/li&gt;
+&lt;li&gt;邹检验假定我们知道结构转折点；&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h3 id=&#34;正态性检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#正态性检验&#34;&gt;#&lt;/a&gt; 正态性检验&lt;/h3&gt;
 &lt;p&gt;​	正态性检验是检验误差项是否为正太分布。&lt;/p&gt;
 &lt;p&gt;正太性的雅克 - 贝拉（Jarque-Bera）检验：&lt;/p&gt;
@@ -575,7 +596,7 @@
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212145308.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h5 id=&#34;自相关系数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自相关系数&#34;&gt;#&lt;/a&gt; 自相关系数&lt;/h5&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212152252.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;序列相关的类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序列相关的类型&#34;&gt;#&lt;/a&gt; 序列相关的类型&lt;/h3&gt;
+&lt;h3 id=&#34;序列相关性的类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序列相关性的类型&#34;&gt;#&lt;/a&gt; 序列相关性的类型&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;非纯序列相关：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;​	通常由设定偏误导致，所谓模型设定偏误表现在模型中丢掉重要的变量或模型函数形式有错误即遗漏变量、不正确的函数形式；&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212151302.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -616,6 +637,7 @@
 &lt;p&gt;DW 检验临界值 (&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;L&lt;/mi&gt;&lt;/msub&gt;&lt;mtext&gt;、&lt;/mtext&gt;&lt;msub&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;U&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;d_L、d_U&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.84444em;vertical-align:-0.15em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.32833099999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;L&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;、&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.32833099999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.10903em;&#34;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;) 与三个参数有关：&lt;br /&gt;
 ①检验水平&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;α&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\alpha&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.43056em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.0037em;&#34;&gt;α&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，②样本容量 n , ③原回归模型中解释变量个数 k（不包括常数项）。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212164528.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;若采用双侧侧检验，则结论为是否存在序列相关。&lt;/p&gt;
 &lt;p&gt;当 DW 值落在 “不确定” 区域时，两种处理方法：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;加大样本容量或重新选取样本，重作 DW 检验。有时 DW 值会离开不确定区；&lt;/li&gt;
@@ -632,7 +654,7 @@
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212155412.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;拉格朗日乘数检验的 EViews 操作&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212160815.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;序列相关的补救&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序列相关的补救&#34;&gt;#&lt;/a&gt; 序列相关的补救&lt;/h3&gt;
+&lt;h3 id=&#34;序列相关性的补救&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#序列相关性的补救&#34;&gt;#&lt;/a&gt; 序列相关性的补救&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;非纯序列相关：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;​	- 正确的模型设定，特别是出现负的序列相关时；&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;纯序列相关：&lt;/strong&gt;&lt;/p&gt;
@@ -684,7 +706,7 @@
 &lt;li&gt;时间序列数据：学习效应、数据采集技术的变化&lt;/li&gt;
 &lt;li&gt;异常值&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;异方差性的特征&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#异方差性的特征&#34;&gt;#&lt;/a&gt; 异方差性的特征&lt;/h3&gt;
+&lt;h3 id=&#34;异方差的特征&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#异方差的特征&#34;&gt;#&lt;/a&gt; 异方差的特征&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;OLS 估计量仍是无偏的；&lt;/li&gt;
 &lt;li&gt;OLS 估计量不再是有效的（即最小方差估计量）；&lt;/li&gt;
@@ -693,7 +715,7 @@
 &lt;p&gt;综上：若存在异方差，OLS 估计的假设检验将变的不可靠。&lt;/p&gt;
 &lt;h3 id=&#34;异方差的检验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#异方差的检验&#34;&gt;#&lt;/a&gt; 异方差的检验&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;检验思路：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;​	检验异⽅差，也就是检验随机误差项的方差与比例因子 Z 或解释变量 X 之间的相关性及其 “形式”；又因随机误差项方差的样本对应物是 OLS 的残差平方，因此所有的检验方法都基于&lt;u&gt;残差平方&lt;/u&gt;。&lt;/p&gt;
+&lt;p&gt;​	检验异⽅差，也就是检验随机误差项的方差与比例因子 Z 或解释变量 X 之间的相关性及其 “形式”；又因随机误差项方差的样本对应物是 OLS 的残差平方，因此所有的检验方法都基于&lt;u&gt;&lt;strong&gt;残差平方&lt;/strong&gt;&lt;/u&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;异方差的检验方法：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -751,6 +773,13 @@
 &lt;h3 id=&#34;虚拟变量概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟变量概念&#34;&gt;#&lt;/a&gt; 虚拟变量概念&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212193128.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;​	虚拟变量既可以作为解释变量，又可以作为被解释变量；虚拟应变量模型又称为概率模型、离散选择模型。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;设置原则：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;每⼀定性变量所需的虚拟变量个数要比该定性变量的类别数少 1，即如果有 m 个定性变量，只在模型中引⼊ m-1 个虚拟变量；&lt;/li&gt;
+&lt;li&gt;在同⼀个⽅程中，可以引⼊多个虚拟变量来考察多种定性因素的影响；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;虚拟变量的引入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟变量的引入&#34;&gt;#&lt;/a&gt; 虚拟变量的引入&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211213191601.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;线性概率模型lpm&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性概率模型lpm&#34;&gt;#&lt;/a&gt; 线性概率模型（LPM)&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212193508.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211212193548.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -1127,13 +1156,13 @@
 &lt;p&gt;文档之间跳转&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;相对路径：&lt;/p&gt;
+&lt;p&gt;相对路径（适用于 markdown 的阅读）：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;[content](相对地址)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;如果在相对文件夹下，相对地址为 &lt;code&gt;./xxx.md&lt;/code&gt; ;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;../&lt;/code&gt;  用于表示上一级目录，以此类推；&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;绝对路径：&lt;/p&gt;
+&lt;p&gt;绝对路径（适用于博客的阅读）：&lt;/p&gt;
 &lt;p&gt;HTML 写法：&lt;/p&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;helf&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;xxx.com&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;content&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;Markdown 写法：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;[content](xxx.com)  //快捷键 ctrl+
