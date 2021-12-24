@@ -85,7 +85,7 @@
 &lt;p&gt;函数式&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;@@@&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		name&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;sakura&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;mvvm模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mvvm模型&#34;&gt;#&lt;/a&gt; MVVM 模型&lt;/h4&gt;
+&lt;h3 id=&#34;mvvm模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mvvm模型&#34;&gt;#&lt;/a&gt; MVVM 模型&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211217220326.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;模型 (Model) ：data 中的数据&lt;/p&gt;
@@ -121,7 +121,7 @@ MVVM 本质上是 MVC （Model-View- Controller）的改进版。即模型 - 视
 &lt;h4 id=&#34;v-model&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#v-model&#34;&gt;#&lt;/a&gt; v-model&lt;/h4&gt;
 &lt;p&gt;功能：强制数据绑定（双向绑定）&lt;/p&gt;
 &lt;p&gt;语法：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;v-model:value=&#39;xxx&#39;    
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;v-model:value=&#39;xxx&#39;    
 v-model=&#39;xxx&#39;        //简写
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;特点：&lt;/p&gt;
@@ -195,15 +195,158 @@ v-for=&#39;(item.index) of xxx&#39; :key=&#39;yyy&#39;
 &lt;/ol&gt;
 &lt;p&gt;开发中如何选择 key:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;最好使用每条数据的唯一标识作为 key, 比如 id、手机号、身份证号、学号等唯一值。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果不存在对数据的逆序添加、逆序删除等破坏顺序操作，仅用于渲染列表用于展示，使用 index 作为 key 是没有问题的。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;最好使用每条数据的唯一标识作为 key, 比如 id、手机号、身份证号、学号等唯一值。&lt;/li&gt;
+&lt;li&gt;如果不存在对数据的逆序添加、逆序删除等破坏顺序操作，仅用于渲染列表用于展示，使用 index 作为 key 是没有问题的。&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h4 id=&#34;v-text&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#v-text&#34;&gt;#&lt;/a&gt; v-text&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;作用：向其所在的节点中渲染文本内容。&lt;/li&gt;
+&lt;li&gt;与插值语法的区别： &lt;code&gt;v-text&lt;/code&gt;  会替换掉节点中的内容， &lt;code&gt;&amp;#123;&amp;#123;xx&amp;#125;&amp;#125;&lt;/code&gt;  则不会。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;v-html&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#v-html&#34;&gt;#&lt;/a&gt; v-html&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;作用：向指定节点中渲染包含 html 结构的内容。&lt;/li&gt;
+&lt;li&gt;与插值语法的区别：
+&lt;ul&gt;
+&lt;li&gt;v-html 会替换掉节点中所有的内容，则不会&lt;/li&gt;
+&lt;li&gt;v-html 可以识别 html 结构。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;严重注意：v-html 有安全性问题！！！！
+&lt;ul&gt;
+&lt;li&gt;在网站上动态渲染任意 HTML 是非常危险的，容易导致 XSS 攻击。&lt;/li&gt;
+&lt;li&gt;一定要在可信的内容上使用 v-html，永不要用在用户提交的内容上！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;v-clock&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#v-clock&#34;&gt;#&lt;/a&gt; v-clock&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;本质是一个特殊属性（没有值），Vue 实例创建完毕并接管容器后会删掉 c-clock 属性；&lt;/li&gt;
+&lt;li&gt;使用 CSS（即通过属性选择器 &lt;code&gt;[v-cloak] &amp;#123; display: none &amp;#125;&lt;/code&gt; ）配合 v-clock 可以解决网速慢时页面展示出的问题。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;v-once&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#v-once&#34;&gt;#&lt;/a&gt; v-once&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;v-once 所在节点在初次动态渲染后，就视为静态内容了。&lt;/li&gt;
+&lt;li&gt;以后数据的改变不会引起 v-once 所在结构的更新，可以用于优化性能。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;v-pre&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#v-pre&#34;&gt;#&lt;/a&gt; v-pre&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;跳过其所在节点的编译过程。&lt;/li&gt;
+&lt;li&gt;可利用它跳过：没有使用指令语法、没有使用插值语法的节点，会加快编译。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;自定义指令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自定义指令&#34;&gt;#&lt;/a&gt; 自定义指令&lt;/h3&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;局部指令&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;//对象式
+new Vue(&amp;#123;
+	dirextives:&amp;#123;
+		指令名:&amp;#123;
+			配置对象1()&amp;#123;xxx&amp;#125;,
+			配置对象2()&amp;#123;xxx&amp;#125;,
+				&amp;#125;&amp;#125;
+		&amp;#125;)
+//函数式
+new Vue(&amp;#123;
+	directives()&amp;#123;&amp;#125;
+&amp;#125;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;全局指令&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;//对象式
+Vue.dirctive(指令名，&amp;#123;
+	配置对象1()&amp;#123;&amp;#125;,
+	配置对象2()&amp;#123;&amp;#125;,
+&amp;#125;)
+//函数式
+Vue.directive(指令名,回调函数)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;配置对象中的三个常用回调：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.bind&lt;/code&gt; ：指令与元素成功绑定时调用；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.inserted&lt;/code&gt; ：指令所在元素被插入页面时调用；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;update&lt;/code&gt; ：指令所在模板结构被重新解析时调用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;注意事项：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;指令定义时不加 &lt;code&gt;v-&lt;/code&gt; ，但使用时要加 &lt;code&gt;v-&lt;/code&gt; ;&lt;/li&gt;
+&lt;li&gt;指令名如果是多个单词时，要使用 xxx-yyy 的命名方式。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;代码实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+	&amp;lt;head&amp;gt;
+		&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt;
+		&amp;lt;title&amp;gt;自定义指令&amp;lt;/title&amp;gt;
+		&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;../js/vue.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+	&amp;lt;/head&amp;gt;
+	&amp;lt;body&amp;gt;
+		&amp;lt;!-- 准备好一个容器--&amp;gt;
+		&amp;lt;div id=&amp;quot;root&amp;quot;&amp;gt;
+			&amp;lt;h2&amp;gt;&amp;#123;&amp;#123;name&amp;#125;&amp;#125;&amp;lt;/h2&amp;gt;
+			&amp;lt;h2&amp;gt;当前的n值是：&amp;lt;span v-text=&amp;quot;n&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/h2&amp;gt;
+			&amp;lt;!-- &amp;lt;h2&amp;gt;放大10倍后的n值是：&amp;lt;span v-big-number=&amp;quot;n&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/h2&amp;gt; --&amp;gt;
+			&amp;lt;h2&amp;gt;放大10倍后的n值是：&amp;lt;span v-big=&amp;quot;n&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/h2&amp;gt;
+			&amp;lt;button @click=&amp;quot;n++&amp;quot;&amp;gt;点我n+1&amp;lt;/button&amp;gt;
+			&amp;lt;hr/&amp;gt;
+			&amp;lt;input type=&amp;quot;text&amp;quot; v-fbind:value=&amp;quot;n&amp;quot;&amp;gt;
+		&amp;lt;/div&amp;gt;
+	&amp;lt;/body&amp;gt;
+	
+	&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+		Vue.config.productionTip = false
+
+		//定义全局指令
+		/* Vue.directive(&#39;fbind&#39;,&amp;#123;
+			//指令与元素成功绑定时（一上来）
+			bind(element,binding)&amp;#123;
+				element.value = binding.value
+			&amp;#125;,
+			//指令所在元素被插入页面时
+			inserted(element,binding)&amp;#123;
+				element.focus()
+			&amp;#125;,
+			//指令所在的模板被重新解析时
+			update(element,binding)&amp;#123;
+				element.value = binding.value
+			&amp;#125;
+		&amp;#125;) */
+
+		new Vue(&amp;#123;
+			el:&#39;#root&#39;,
+			data:&amp;#123;
+				name:&#39;Sakura&#39;,
+				n:1
+			&amp;#125;,
+			directives:&amp;#123;
+				//big函数何时会被调用？1.指令与元素成功绑定时（一上来）。2.指令所在的模板被重新解析时。
+				/* &#39;big-number&#39;(element,binding)&amp;#123;
+					// console.log(&#39;big&#39;)
+					element.innerText = binding.value * 10
+				&amp;#125;, */
+				big(element,binding)&amp;#123;
+					console.log(&#39;big&#39;,this) //注意此处的this是window
+					// console.log(&#39;big&#39;)
+					element.innerText = binding.value * 10
+				&amp;#125;,
+				fbind:&amp;#123;
+					//指令与元素成功绑定时（一上来）
+					bind(element,binding)&amp;#123;
+						element.value = binding.value
+					&amp;#125;,
+					//指令所在元素被插入页面时
+					inserted(element,binding)&amp;#123;
+						element.focus()
+					&amp;#125;,
+					//指令所在的模板被重新解析时
+					update(element,binding)&amp;#123;
+						element.value = binding.value
+					&amp;#125;
+				&amp;#125;
+			&amp;#125;
+		&amp;#125;)
+		
+	&amp;lt;/script&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;事件处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事件处理&#34;&gt;#&lt;/a&gt; 事件处理&lt;/h2&gt;
 &lt;h3 id=&#34;绑定监听&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绑定监听&#34;&gt;#&lt;/a&gt; 绑定监听&lt;/h3&gt;
 &lt;ol&gt;
@@ -677,7 +820,540 @@ vm.$watch(&#39;isHot&#39;，function(newValue,oldValue)&amp;#123;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;vue的数组方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vue的数组方法&#34;&gt;#&lt;/a&gt; Vue 的数组方法&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmdfeGlhb195ZS9hcnRpY2xlL2RldGFpbHMvODkzODUwMjM=&#34;&gt;(3 条消息) Vue 中常用的数组方法.filter ()、.map ()、.forEach ()、.find ()、.findIndex ()、.some ()、.every ()_wang_xiao_ye 的博客 - CSDN 博客_vue 数组 map&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;filter&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#filter&#34;&gt;#&lt;/a&gt; filter()&lt;/h3&gt;
+&lt;p&gt;​	filter () 方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; arr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;33&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; arr1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; arr&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;filter&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;item&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; item &lt;span class=&#34;token operator&#34;&gt;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;arr1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// [32, 33, 40]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;map&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#map&#34;&gt;#&lt;/a&gt; map()&lt;/h3&gt;
+&lt;p&gt;​	map () 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; arr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;9&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; arr1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; arr&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;map&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;item&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; item&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;arr1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// [6, 11, 18, 27]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;foreach&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#foreach&#34;&gt;#&lt;/a&gt; forEach()&lt;/h3&gt;
+&lt;p&gt;​	forEach () 方法用于调用数组的每个元素，并将元素传递给回调函数。（对空数组是不会执行回调函数的）&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; arr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;9&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; arr1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;arr&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;forEach&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;item&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; arr1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;push&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;item&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;arr1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// [4, 9, 16, 25]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;find&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#find&#34;&gt;#&lt;/a&gt; find()&lt;/h3&gt;
+&lt;p&gt;​	find () 方法返回通过测试（函数内判断）的数组的第一个元素的值，之后的值不会再调用执行函数，如果没有符合条件的元素返回 undefined。（对于空数组，函数是不会执行的）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;findIndex()&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	findIndex () 方法返回传入一个测试条件（函数）符合条件的数组第一个元素位置，之后的值不会再调用执行函数，如果没有符合条件的元素返回 - 1.（对于空数组，函数是不会执行的）&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;//find()&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; arr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;9&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; b1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; arr&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;item&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; item&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; c1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; arr&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;item&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; item&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;b1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// 16&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// undefined&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;//findIndex()&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; b2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; arr&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;findIndex&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;item&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; item&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; c2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; arr&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;findIndex&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;item&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; item&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;b2&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// 2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c2&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// -1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;someevery&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#someevery&#34;&gt;#&lt;/a&gt; some()&amp;amp;every()&lt;/h3&gt;
+&lt;p&gt;​	some () 方法用于&lt;strong&gt;依次&lt;/strong&gt;检测数组中的元素是否满足指定条件（函数提供）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果有一个元素满足条件，则表达式返回 true , 剩余的元素不会再执行检测。&lt;/li&gt;
+&lt;li&gt;如果没有满足条件的元素，则返回 false。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;every () 方法用于检测数组&lt;strong&gt;所有&lt;/strong&gt;元素是否都符合指定条件（通过函数提供）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果数组中检测到有一个元素不满足，则整个表达式返回 false ，且剩余的元素不会再进行检测。&lt;/li&gt;
+&lt;li&gt;如果所有元素都满足条件，则返回 true。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​	两者均不会对空数组进行检测，且不会改变原始数组。&lt;/p&gt;
+&lt;h3 id=&#34;fill&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#fill&#34;&gt;#&lt;/a&gt; fill()&lt;/h3&gt;
+&lt;p&gt;​	fill () 方法用于将一个固定值替换数组的元素.&lt;/p&gt;
+&lt;p&gt;该方法会改变原始数组，但不会对空数组进行填充。&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; arr1&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;9&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; arr1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;fill&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; arr2&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;9&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; c &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; arr2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;fill&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// 2 为开始填充的起始位置，4 为结束位置（不包含）&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; arr3&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; d &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; arr3&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;fill&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;arr1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;   &lt;span class=&#34;token comment&#34;&gt;// [100, 100, 100, 100]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// [100, 100, 100, 100]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;arr2&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// [4, 9, 100, 100]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// [4, 9, 100, 100]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;arr3&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// []&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;d&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// []&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;表单数据收集&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表单数据收集&#34;&gt;#&lt;/a&gt; 表单数据收集&lt;/h2&gt;
+&lt;p&gt;​	Vue 的表单数据收集一般使用 v-model (双向数据绑定) 自动收集数据。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;v-model 的三个修饰符：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;lazy&lt;/code&gt; ：失去焦点后再收集数据；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;number&lt;/code&gt; ：输入字符串转为有效的数字；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;trim&lt;/code&gt; ：输入的首尾空格将被过滤；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;输入栏&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输入栏&#34;&gt;#&lt;/a&gt; 输入栏&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;text&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;v-model&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;xxx&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211223144637.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;password&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;input type=&#39;password&#39; v-model=&#39;xxx&#39;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211223144732.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;number&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;input type=&#39;number&#39; v-model.number=&#39;xxx&#39;/&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;​	需配合 v-model 的 &lt;code&gt;.number&lt;/code&gt;  修饰符使用，将输入的字符串转为有效的数字；&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211223144841.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;radio&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;男&amp;lt;input type=&amp;quot;radio&amp;quot; name=&#39;sex&#39; v-model=&#39;userinfo.sex&#39; value=&amp;quot;man&amp;quot;&amp;gt;
+女&amp;lt;input type=&amp;quot;radio&amp;quot; name=&#39;sex&#39; v-model=&#39;userinfo.sex&#39; value=&amp;quot;woman&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;如果需要多选一，则需要配置 name 属性；&lt;/li&gt;
+&lt;li&gt;v-model 收集的 value 值，故一定需要给标签配置 value 值；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211223145454.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;checkbox&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; v-model=&#39;userinfo.hobby&#39; value=&amp;quot;stydy&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;如果没有配置其 value 属性，则收集的为 checked（勾选 or 未勾选，布尔值）；&lt;/li&gt;
+&lt;li&gt;如果配置了其 value 属性，还需要将 v-model 的初始值设为数组，这样才能收集 value 组成的数组，否则收集的还是 checked；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211223150622.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;select&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;所属校区
+&amp;lt;select v-model=&#39;userinfo.school&#39;&amp;gt;                 		&amp;lt;option value=&amp;quot;&amp;quot;&amp;gt;请选择校区&amp;lt;/option&amp;gt;
+    &amp;lt;option value=&amp;quot;shahe&amp;quot;&amp;gt;沙河&amp;lt;/option&amp;gt;            	&amp;lt;option value=&amp;quot;qingshuihe&amp;quot;&amp;gt;清水河&amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211223150858.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;textarea&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;textarea v-model.lazy=&#39;userinfo.other&#39;&amp;gt;&amp;lt;/textarea&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;​	一般配合 v-model 的 &lt;code&gt;.lazy&lt;/code&gt;  修饰符使用，来减少无效开销；&lt;/p&gt;
+&lt;h3 id=&#34;表单代码实例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表单代码实例&#34;&gt;#&lt;/a&gt; 表单代码实例&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;zh-cn&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+    &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge&amp;quot;&amp;gt;
+    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;收集表单数据&amp;lt;/title&amp;gt;
+    &amp;lt;script src=&amp;quot;../js/vue.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+    &amp;lt;div id=&amp;quot;root&amp;quot;&amp;gt;
+        &amp;lt;form @submit.prevent=&#39;demo&#39;&amp;gt;
+            账号:&amp;lt;input type=&amp;quot;text&amp;quot; v-model.trim=&#39;userinfo.account&#39;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+            密码:&amp;lt;input type=&amp;quot;password&amp;quot; v-model=&#39;userinfo.password&#39;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+            年龄:&amp;lt;input type=&amp;quot;number&amp;quot; v-model.number=&#39;userinfo.age&#39;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+            性别:
+            男&amp;lt;input type=&amp;quot;radio&amp;quot; name=&#39;sex&#39; v-model=&#39;userinfo.sex&#39; value=&amp;quot;man&amp;quot;&amp;gt;
+            女&amp;lt;input type=&amp;quot;radio&amp;quot; name=&#39;sex&#39; v-model=&#39;userinfo.sex&#39; value=&amp;quot;woman&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+            爱好:
+            学习&amp;lt;input type=&amp;quot;checkbox&amp;quot; v-model=&#39;userinfo.hobby&#39; value=&amp;quot;stydy&amp;quot;&amp;gt;
+            打游戏&amp;lt;input type=&amp;quot;checkbox&amp;quot; v-model=&#39;userinfo.hobby&#39; value=&amp;quot;game&amp;quot;&amp;gt;
+            吃饭&amp;lt;input type=&amp;quot;checkbox&amp;quot; v-model=&#39;userinfo.hobby&#39; value=&amp;quot;eat&amp;quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+            所属校区
+            &amp;lt;select v-model=&#39;userinfo.school&#39;&amp;gt;
+                &amp;lt;option value=&amp;quot;&amp;quot;&amp;gt;请选择校区&amp;lt;/option&amp;gt;
+                &amp;lt;option value=&amp;quot;shahe&amp;quot;&amp;gt;沙河&amp;lt;/option&amp;gt;
+                &amp;lt;option value=&amp;quot;qingshuihe&amp;quot;&amp;gt;清水河&amp;lt;/option&amp;gt;
+            &amp;lt;/select&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+            其它信息:
+            &amp;lt;textarea v-model.lazy=&#39;userinfo.other&#39;&amp;gt;&amp;lt;/textarea&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+            &amp;lt;input type=&amp;quot;checkbox&amp;quot; v-model=&#39;userinfo.agree&#39;&amp;gt; 阅读并接收&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;《用户协议》&amp;lt;/a&amp;gt;
+            &amp;lt;button&amp;gt;提交&amp;lt;/button&amp;gt;
+        &amp;lt;/form&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+&amp;lt;/body&amp;gt;
+&amp;lt;script&amp;gt;
+    new Vue(&amp;#123;
+        el: &#39;#root&#39;,
+        data: &amp;#123;
+            userinfo: &amp;#123;
+                account: &#39;&#39;,
+                password: &#39;&#39;,
+                age: 18,
+                sex: &#39;man&#39;,
+                hobby: [],
+                school: &#39;&#39;,
+                other: &#39;&#39;,
+                agree: &#39;&#39;,
+            &amp;#125;
+        &amp;#125;,
+        methods: &amp;#123;
+            demo() &amp;#123;
+                console.log(JSON.stringify(this.userinfo))
+            &amp;#125;
+        &amp;#125;,
+    &amp;#125;)
+&amp;lt;/script&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;生命周期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生命周期&#34;&gt;#&lt;/a&gt; 生命周期&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;官方生命周期图：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211223202830.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;细节解释&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211223203006.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;常用的生命周期方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用的生命周期方法&#34;&gt;#&lt;/a&gt; 常用的生命周期方法&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;mounted()&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	【初始化操作】&lt;/p&gt;
+&lt;p&gt;​	发送 ajax 请求，启动定时器、绑定自定义事件、订阅消息等异步任务；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;beforeDestory()&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	【收尾工作】&lt;/p&gt;
+&lt;p&gt;​	清除定时器、解绑自定义事件、取消订阅消息等收尾工作；&lt;/p&gt;
+&lt;h2 id=&#34;vue组件的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vue组件的使用&#34;&gt;#&lt;/a&gt; Vue 组件的使用&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;组件的定义：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	实现应用中局部功能代码和资源的集合。&lt;/p&gt;
+&lt;h3 id=&#34;非单文件组件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#非单文件组件&#34;&gt;#&lt;/a&gt; 非单文件组件&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;使用组件的三大步骤：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;#extend&#34;&gt;定义组件（创建组件）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#component&#34;&gt;注册组件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#template&#34;&gt;使用组件（编写组件结构）&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span id=&#39;extend&#39;&gt;&lt;strong&gt;定义组件&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​	使用 &lt;code&gt;Vue.extend(options)&lt;/code&gt;  创建，其中 &lt;code&gt;options&lt;/code&gt;  和 &lt;code&gt;new Vue（options)&lt;/code&gt;  时传入的那个 &lt;code&gt;options&lt;/code&gt;  几乎一样，但有以下区别:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不要写 &lt;code&gt;el&lt;/code&gt; —— 最终所有的组件都要经过一个 vm 的管理，由 vm 中的 &lt;code&gt;el&lt;/code&gt;  决定服务哪个容器；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;data&lt;/code&gt;  必须写成函数 —— 避免组件被复用时，数据存在引用关系；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span id=&#39;component&#39;&gt;&lt;strong&gt;注册组件&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;局部注册： &lt;code&gt;new Vue&lt;/code&gt;  的时候传入 &lt;code&gt;components&lt;/code&gt;  选项&lt;/li&gt;
+&lt;li&gt;全局注册： &lt;code&gt;Vue.component&lt;/code&gt;  (‘组件名’, 组件)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span id=&#39;template&#39;&gt;&lt;strong&gt;使用组件&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;使用 Vue 的 template 属性创建组件结构，用两个顿号（`）包裹结构。&lt;/p&gt;
+&lt;p&gt;非单文件代码实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+
+&amp;lt;head&amp;gt;
+  &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt;
+  &amp;lt;title&amp;gt;几个注意点&amp;lt;/title&amp;gt;
+  &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;../js/vue.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+  &amp;lt;!-- 准备好一个容器--&amp;gt;
+  &amp;lt;div id=&amp;quot;root&amp;quot;&amp;gt;
+    &amp;lt;h1&amp;gt;&amp;#123;&amp;#123;msg&amp;#125;&amp;#125;&amp;lt;/h1&amp;gt;
+    &amp;lt;school&amp;gt;&amp;lt;/school&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+  Vue.config.productionTip = false
+
+  //定义组件
+  const s = Vue.extend(&amp;#123;
+    name: &#39;atguigu&#39;,
+    template: `
+				&amp;lt;div&amp;gt;
+					&amp;lt;h2&amp;gt;学校名称：&amp;#123;&amp;#123;name&amp;#125;&amp;#125;&amp;lt;/h2&amp;gt;	
+					&amp;lt;h2&amp;gt;学校地址：&amp;#123;&amp;#123;address&amp;#125;&amp;#125;&amp;lt;/h2&amp;gt;	
+				&amp;lt;/div&amp;gt;
+			`,
+    data() &amp;#123;
+      return &amp;#123;
+        name: &#39;尚硅谷&#39;,
+        address: &#39;北京&#39;
+      &amp;#125;
+    &amp;#125;
+  &amp;#125;)
+
+  new Vue(&amp;#123;
+    el: &#39;#root&#39;,
+    data: &amp;#123;
+      msg: &#39;欢迎学习Vue!&#39;
+    &amp;#125;,
+    components: &amp;#123;
+      school: s
+    &amp;#125;
+  &amp;#125;)
+&amp;lt;/script&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;注意项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注意项&#34;&gt;#&lt;/a&gt; 注意项&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;关于组件名&lt;/strong&gt;&lt;br /&gt;
+一个单词组成：&lt;br /&gt;
+第一种写法（首字母小写）：school&lt;br /&gt;
+ 第二种写法（首字母大写）：School&lt;/p&gt;
+&lt;p&gt;多个单词组成：&lt;br /&gt;
+第一种写法（kebab-case 命名）：my-school&lt;br /&gt;
+ 第二种写法（CamelCase 命名）：MySchool（需要 Vue 脚手架支持）&lt;/p&gt;
+&lt;p&gt;备注&lt;br /&gt;
+① 组件名尽可能回避 HTML 中已有的元素名称，例如 h2、H2；&lt;br /&gt;
+② 可以使用 name 配置项指定组件在开发者工具中呈现的名字；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关于组件标签&lt;/strong&gt;&lt;br /&gt;
+第一种写法：&lt;school&gt;&lt;/school&gt;&lt;br /&gt;
+第二种写法：&lt;school/&gt; (不使用脚手架会导致后续组件不能渲染)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;简写方式&lt;/strong&gt;&lt;br /&gt;
+ &lt;code&gt;const school = Vue.extend(options) &lt;/code&gt; 可以简写成 &lt;code&gt;const school = options&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;vuecomponent&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vuecomponent&#34;&gt;#&lt;/a&gt; VueComponent&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;app 组件本质是一个名为 VueComponent 的构造函数，且不是程序员定义的，是 Vue.extend 生成的；&lt;/li&gt;
+&lt;li&gt;我们只需要写&lt;app/&gt;或&lt;app&gt;&lt;/app&gt;，Vue 解析时会帮我们创建 app 组件的实例对象，即 Vue 帮我们执行 new VueComponent (options);&lt;/li&gt;
+&lt;li&gt;特别注意：每次调用 Vue.extend，返回的都是一个全新的 VueComponent;&lt;/li&gt;
+&lt;li&gt;关于 this 指向&lt;br /&gt;
+① 组件配置中：data 函数、methods 中的函数、watch 中的函数、computed 中的函数 它们的 this 均是【VueComponent 实例对象】&lt;br /&gt;
+② new Vue (options) 配置中：data 函数、methods 中的函数、watch 中的函数、computed 中的函数 它们的 this 均是【Vue 实例对象】;&lt;/li&gt;
+&lt;li&gt;VueComponent 的实例对象，以后简称 vc（也可称之为：组件实例对象）;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;一个重要的内置关系&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;VueComponent.prototype.__proto__ === Vue.prototype
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这样组件实例对象 vc 就可以访问到 Vue 原型上的属性和方法。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/mzcy3021213/image/raw/master/img/20211224144834.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;单文件组件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#单文件组件&#34;&gt;#&lt;/a&gt; 单文件组件&lt;/h3&gt;
+&lt;p&gt;主要由三部分组成：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;#vue&#34;&gt;Vue 组件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#main&#34;&gt;main.js 文件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#index&#34;&gt;index.html 文件&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span id=&#39;vue&#39;&gt;&lt;strong&gt;Vue 组件&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;普通组件的组成&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;模板页面&lt;/li&gt;
+&lt;li&gt;JS 模块对象&lt;/li&gt;
+&lt;li&gt;样式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;代码实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;//模板页面
+&amp;lt;template&amp;gt;
+  &amp;lt;div class=&amp;quot;demo&amp;quot;&amp;gt;
+    &amp;lt;h2&amp;gt;学生名称:&amp;#123;&amp;#123; name &amp;#125;&amp;#125;&amp;lt;/h2&amp;gt;
+    &amp;lt;h2&amp;gt;学生地址:&amp;#123;&amp;#123; address &amp;#125;&amp;#125;&amp;lt;/h2&amp;gt;
+    &amp;lt;button @click=&amp;quot;showName&amp;quot;&amp;gt;&amp;lt;/button&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+//JS模块对象
+&amp;lt;script&amp;gt;
+export default &amp;#123;
+  name: &amp;quot;school&amp;quot;,
+  data() &amp;#123;
+    return &amp;#123;
+      name: &amp;quot;Sakura&amp;quot;,
+      address: &amp;quot;成都&amp;quot;,
+    &amp;#125;;
+  &amp;#125;,
+  methods: &amp;#123;
+    showName() &amp;#123;
+      alert(this.name);
+    &amp;#125;,
+  &amp;#125;,
+&amp;#125;;
+&amp;lt;/script&amp;gt;
+
+//样式
+&amp;lt;style&amp;gt;
+.demo &amp;#123;
+  background: orange;
+&amp;#125;
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;App.vue&lt;/p&gt;
+&lt;p&gt;所有组件的父组件，用于调控和使用其它组件。&lt;/p&gt;
+&lt;p&gt;代码实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;template&amp;gt;
+  &amp;lt;div&amp;gt;
+    &amp;lt;School&amp;gt;&amp;lt;/School&amp;gt;
+    &amp;lt;Student&amp;gt;&amp;lt;/Student&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+import School from &amp;quot;./School&amp;quot;;
+import Student from &amp;quot;./Student.vue&amp;quot;;
+export default &amp;#123;
+  name: &amp;quot;App&amp;quot;,
+  component: &amp;#123;
+    School,
+    Student,
+  &amp;#125;,
+&amp;#125;;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span id=&#39;main&#39;&gt;&lt;strong&gt;main.js 文件&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;代码实例：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; App &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;./App.vue&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Vue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    el&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;#root&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    template&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token template-string&#34;&gt;&lt;span class=&#34;token template-punctuation string&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&amp;lt;App&gt;&amp;lt;/App&gt;&lt;/span&gt;&lt;span class=&#34;token template-punctuation string&#34;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    component&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; App &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span id=&#39;index&#39;&gt;&lt;strong&gt;index.html 文件&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;代码实例：&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token doctype&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span class=&#34;token doctype-tag&#34;&gt;DOCTYPE&lt;/span&gt; &lt;span class=&#34;token name&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;zh-cn&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;UTF-8&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;http-equiv&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;X-UA-Compatible&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;IE=edge&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;viewport&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;width=device-width, initial-scale=1.0&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;单文件组件&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;root&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- &amp;lt;App&gt;&amp;lt;/App&gt; --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;../js/vue.js&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token script&#34;&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;./main.js&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token script&#34;&gt;&lt;/span&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;vue-cli&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vue-cli&#34;&gt;#&lt;/a&gt; Vue CLI&lt;/h2&gt;
+&lt;h3 id=&#34;脚手架的安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#脚手架的安装&#34;&gt;#&lt;/a&gt; 脚手架的安装&lt;/h3&gt;
+&lt;p&gt;暂略&lt;/p&gt;
+&lt;h3 id=&#34;脚手架文件结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#脚手架文件结构&#34;&gt;#&lt;/a&gt; 脚手架文件结构&lt;/h3&gt;
+&lt;p&gt;├── node_modules&lt;br /&gt;
+├── public&lt;br /&gt;
+│   ├── favicon.ico: 页签图标&lt;br /&gt;
+│   └── index.html: 主页面&lt;br /&gt;
+├── src&lt;br /&gt;
+│   ├── assets: 存放静态资源&lt;br /&gt;
+│   │   └── logo.png&lt;br /&gt;
+│   │── component: 存放组件&lt;br /&gt;
+│   │   └── HelloWorld.vue&lt;br /&gt;
+│   │── App.vue: 汇总所有组件&lt;br /&gt;
+│   │── main.js: 入口文件&lt;br /&gt;
+├── .gitignore: git 版本管制忽略的配置&lt;br /&gt;
+├── babel.config.js: babel 的配置文件&lt;br /&gt;
+├── package.json: 应用包配置文件&lt;br /&gt;
+├── &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL1JFQURNRS5tZA==&#34;&gt;README.md&lt;/span&gt;: 应用描述文件&lt;br /&gt;
+├── package-lock.json：包版本控制文件&lt;/p&gt;
+&lt;h3 id=&#34;render&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#render&#34;&gt;#&lt;/a&gt; render()&lt;/h3&gt;
+&lt;p&gt;vue.js 与 vue.runtime.xxx.js 的区别：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;vue.js 是完整版的 Vue，包含：核心功能 + 模板解析器。&lt;/li&gt;
+&lt;li&gt;vue.runtime.xxx.js 是运行版的 Vue，只包含：核心功能；没有模板解析器。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;因为 vue.runtime.xxx.js 没有模板解析器，所以不能使用 template 这个配置项，需要使用 render 函数接收到的 createElement 函数去指定具体内容。&lt;/p&gt;
+&lt;p&gt;代码实例：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Vue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function-variable function&#34;&gt;render&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token parameter&#34;&gt;h&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;App&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;$mount&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;#app&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;个性化配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#个性化配置&#34;&gt;#&lt;/a&gt; 个性化配置&lt;/h3&gt;
+&lt;p&gt;​	先创建 vue.config.js 文件，再参考&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbGkudnVlanMub3JnL3poL2NvbmZpZy8=&#34;&gt;配置参考 | Vue CLI (vuejs.org)&lt;/span&gt; 后将需要修改的部分写入文件。&lt;/p&gt;
+&lt;h2 id=&#34;vue高级知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vue高级知识&#34;&gt;#&lt;/a&gt; Vue 高级知识&lt;/h2&gt;
+&lt;h3 id=&#34;ref属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ref属性&#34;&gt;#&lt;/a&gt; ref 属性&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;功能：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	被用来给元素或子组件注册引用信息（id 的替代者）。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;应用在 html 标签上获取的是真实 DOM 元素；&lt;/li&gt;
+&lt;li&gt;应用在组件标签上是组件实例对象（vc）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;使用方式：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打标识：&lt;h1 ref=&#34;xxx&#34;&gt;.....&lt;/h1&gt;或 &lt;School ref=&#34;xxx&#34;&gt;&lt;/School&gt;&lt;/li&gt;
+&lt;li&gt;获取：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3RoaXMuJHJlZnMueHh4&#34;&gt;this.$refs.xxx&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;代码实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;template&amp;gt;
+  &amp;lt;div&amp;gt;
+    &amp;lt;h1 v-text=&amp;quot;msg&amp;quot; ref=&amp;quot;title&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt;
+    &amp;lt;button @click=&amp;quot;showDOM&amp;quot; ref=&amp;quot;btn&amp;quot;&amp;gt;输出上方的DOM元素&amp;lt;/button&amp;gt;
+    &amp;lt;School ref=&amp;quot;sch&amp;quot; /&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+import School from &amp;quot;./components/School.vue&amp;quot;;
+export default &amp;#123;
+  name: &amp;quot;App&amp;quot;,
+  components: &amp;#123;
+    School,
+  &amp;#125;,
+  data() &amp;#123;
+    return &amp;#123;
+      msg: &amp;quot;Vue&amp;quot;,
+    &amp;#125;;
+  &amp;#125;,
+  methods: &amp;#123;
+    showDOM() &amp;#123;
+      console.log(this.$refs.title);
+      console.log(this.$refs.btn);
+      console.log(this.$refs.sch);
+    &amp;#125;,
+  &amp;#125;,
+&amp;#125;;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;props属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#props属性&#34;&gt;#&lt;/a&gt; props 属性&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;功能：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	让组件接收外部传过来的数据；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;使用方式：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;传送数据： &lt;code&gt;&amp;lt;Demo name=&amp;quot;xxx&amp;quot;/&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;接收数据：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;第一种方式（只接收）： &lt;code&gt;props:[&#39;name&#39;]&lt;/code&gt; ；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第二种方式（限制类型）： &lt;code&gt;props:&amp;#123;name:String&amp;#125;&lt;/code&gt; ；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第三种方式（限制类型、限制必要性、指定默认值）：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;props&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	name&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	type&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;String&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 类型&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	required&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 必要性&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;default&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;老王&#39;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;// 默认值&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;** 备注：**props 是只读的，Vue 底层会监测你对 props 的修改，如果进行了修改，就会发出警告，若业务需求确实需要修改，那么请复制 props 的内容到 data 中一份，然后去修改 data 中的数据。&lt;/p&gt;
+&lt;p&gt;代码实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-vue&#34;&gt;&amp;lt;template&amp;gt;
+  &amp;lt;div class=&amp;quot;student&amp;quot;&amp;gt;
+    &amp;lt;h2&amp;gt;学生名称:&amp;#123;&amp;#123; name &amp;#125;&amp;#125;&amp;lt;/h2&amp;gt;
+    &amp;lt;h2&amp;gt;学生地址:&amp;#123;&amp;#123; address &amp;#125;&amp;#125;&amp;lt;/h2&amp;gt;
+    &amp;lt;h2&amp;gt;学生年龄:&amp;#123;&amp;#123; age + 1 &amp;#125;&amp;#125;&amp;lt;/h2&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+export default &amp;#123;
+  name: &amp;quot;Student&amp;quot;,
+  data() &amp;#123;
+    return &amp;#123;
+      maName: this.name,
+      myAge: this.age,
+    &amp;#125;;
+  &amp;#125;,
+  //简单接收
+  // props: [&amp;quot;name&amp;quot;, &amp;quot;address&amp;quot;, &amp;quot;age&amp;quot;],
+  //
+  //类型限制的接收
+  // props: &amp;#123;
+  //   name: String,
+  //   age: Number,
+  //   sex: String,
+  // &amp;#125;,
+  //类型的限制、默认值的限定、必要性的限定
+  props: &amp;#123;
+    name: &amp;#123;
+      type: String,
+      required: true,
+    &amp;#125;,
+    age: &amp;#123;
+      type: Number,
+      default: 10,
+    &amp;#125;,
+    sex: &amp;#123;
+      type: String,
+      required: true,
+    &amp;#125;,
+  &amp;#125;,
+&amp;#125;;
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style&amp;gt;
+.student &amp;#123;
+  background-color: grey;
+&amp;#125;
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;mixin属性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mixin属性&#34;&gt;#&lt;/a&gt; mixin 属性&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;功能：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	可以把多个组件共用的配置提取成一个混入对象；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;使用方式：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;第一步：定义混入（js 文件）：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    methods&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token operator&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第二步：使用混入&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;全局混入：在 mian.js 中  &lt;code&gt;Vue.mixin(xxx)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;局部混入：在 Vue 组件中  &lt;code&gt;mixins:[&#39;xxx&#39;]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;代码实例：&lt;/p&gt;
+&lt;p&gt;mixin.js:&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; hunhe &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  methods&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;showName&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function&#34;&gt;alert&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function&#34;&gt;mounted&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;你好啊！&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; hunhe2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      x&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      y&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;vue插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vue插件&#34;&gt;#&lt;/a&gt; Vue 插件&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;功能：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	用于增强 Vue；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;使用方式：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;定义插件&lt;/p&gt;
+&lt;p&gt;本质：包含 install 方法的一个对象，install 的第一个参数是 Vue，第二个以后的参数是插件使用者传递的数据。&lt;/p&gt;
+&lt;p&gt;代码实例：&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;default&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;Vue&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; z&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; z&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 定义混入&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    Vue&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;mixin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          x&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          y&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 给 Vue 原型上添加一个方法（vm 和 vc 就都能用了）&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token class-name&#34;&gt;Vue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;prototype&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function-variable function&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token function&#34;&gt;alert&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;你好啊&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用插件： &lt;code&gt;Vue.use()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;代码实例：&lt;/p&gt;
+&lt;p&gt;main.js:&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 引入 Vue&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; Vue &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;vue&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 引入 App&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; App &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;./App.vue&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 引入插件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; plugins &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;./plugins&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 应用（使用）插件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Vue&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;use&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;plugins&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 创建 vm&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Vue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  el&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;#app&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token function-variable function&#34;&gt;render&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&gt;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;App&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;scoped样式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#scoped样式&#34;&gt;#&lt;/a&gt; scoped 样式&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;作用：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	让样式在局部生效，防止冲突；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;写法：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;`&amp;lt;style scoped&amp;gt; &amp;lt;/style&amp;gt;`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;问题与解决方案&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问题与解决方案&#34;&gt;#&lt;/a&gt; 问题与解决方案&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Vue 的面试题&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zZWdtZW50ZmF1bHQuY29tL2EvMTE5MDAwMDAxODYzNDc0NA==&#34;&gt;前端面试题 -- Vue - SegmentFault 思否&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
  ]]></description>
         </item>
         <item>
@@ -2014,6 +2690,9 @@ vm.$watch(&#39;isHot&#39;，function(newValue,oldValue)&amp;#123;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;overflow&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;属性选择器&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
