@@ -701,7 +701,7 @@ sessionStorage 的数据在浏览器关闭后自动删除&lt;/p&gt;
 &lt;li&gt;可以在一个 &lt;code&gt;DOM&lt;/code&gt;  元素上绑定多个事件处理器，各自并不会冲突；&lt;/li&gt;
 &lt;li&gt;执行时机可能选择。当第三个参数 ( &lt;code&gt;useCapture&lt;/code&gt; ) 设置为 &lt;code&gt;true&lt;/code&gt;  就在捕获过程中执行，反之在冒泡过程中执行处理函数；&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;IE 事件模型&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;btn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;addEventListener&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;click&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;btn&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;box&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;addEventListener&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;click&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	console&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;box&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 设置为 true，则事件在捕获阶段执行，为 false 则在冒泡阶段执行。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;IE 事件模型&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;IE 事件模型共有两个过程:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;事件处理阶段：事件到达目标元素，触发目标元素的监听函数。&lt;/li&gt;
@@ -3461,6 +3461,45 @@ $route.query.title
 &lt;p&gt;组件内守卫&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 进入守卫：通过路由规则，进入该组件时被调用&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;beforeRouteEnter&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;to&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; from&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; next&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 离开守卫：通过路由规则，离开该组件时被调用&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;beforeRouteLeave&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;to&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; from&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; next&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;完整的导航解析流程&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;导航被触发。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在失活的组件里调用  &lt;code&gt;beforeRouteLeave &lt;/code&gt; 守卫。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;调用全局的  &lt;code&gt;beforeEach &lt;/code&gt; 守卫。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在重用的组件里调用  &lt;code&gt;beforeRouteUpdate &lt;/code&gt; 守卫 (2.2+)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在路由配置里调用  &lt;code&gt;beforeEnter&lt;/code&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解析异步路由组件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在被激活的组件里调用  &lt;code&gt;beforeRouteEnter&lt;/code&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;调用全局的  &lt;code&gt;beforeResolve &lt;/code&gt; 守卫 (2.5+)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;导航被确认。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;调用全局的  &lt;code&gt;afterEach &lt;/code&gt; 钩子。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;触发 DOM 更新。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;调用  &lt;code&gt;beforeRouteEnter &lt;/code&gt; 守卫中传给 next 的回调函数，创建好的组件实例会作为回调函数的参数传入。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h3 id=&#34;缓存路由组件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缓存路由组件&#34;&gt;#&lt;/a&gt; 缓存路由组件&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;作用：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;​	让不展示的路由组件保持挂载，不被销毁。&lt;/p&gt;
@@ -3498,6 +3537,7 @@ $route.query.title
 &lt;li&gt;兼容性和 hash 模式相比略差。&lt;/li&gt;
 &lt;li&gt;应用部署上线时需要后端人员支持，解决刷新页面服务端 404 的问题。&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMzQ1MTA4L2FydGljbGUvZGV0YWlscy8xMjQxNDQwNDc=&#34;&gt;(3 条消息) 【面试】前端路由 hash 和 history 的区别_sqwu 的博客 - CSDN 博客_hash 和 history&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;webstorage&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#webstorage&#34;&gt;#&lt;/a&gt; webStorage&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -6278,8 +6318,8 @@ export default &amp;#123;
             <category term="金融" scheme="https://nc3021.github.io/categories/financial/" />
             <category term="金融" scheme="https://nc3021.github.io/tags/%E9%87%91%E8%9E%8D/" />
             <category term="计量经济学" scheme="https://nc3021.github.io/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/" />
-            <category term="EViews" scheme="https://nc3021.github.io/tags/EViews/" />
             <category term="量化金融" scheme="https://nc3021.github.io/tags/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D/" />
+            <category term="EViews" scheme="https://nc3021.github.io/tags/EViews/" />
             <pubDate>Fri, 26 Nov 2021 16:01:56 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;eviews操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#eviews操作&#34;&gt;#&lt;/a&gt; EViews 操作&lt;/h1&gt;
 &lt;h2 id=&#34;回归数据分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#回归数据分析&#34;&gt;#&lt;/a&gt; 回归数据分析&lt;/h2&gt;
@@ -6582,9 +6622,9 @@ export default &amp;#123;
 &lt;p&gt;圆形边框：&lt;/p&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;border-radius:50%;(在正方形盒子里)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;盒子阴影-box-shadow&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#盒子阴影-box-shadow&#34;&gt;#&lt;/a&gt; 盒子阴影 box-shadow&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/xe1BifprjPugUL8.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;div:hover&amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; box-shadow:10px 10px 10px -4px rgba(0,0,0,.3);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;文字阴影-text-shadow&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文字阴影-text-shadow&#34;&gt;#&lt;/a&gt; 文字阴影 text-shadow&lt;/h3&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;figcaption data-lang=&#34;CSS&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token selector&#34;&gt;div:hover&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 	&lt;span class=&#34;token property&#34;&gt;box-shadow&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;10px 10px 10px -4px &lt;span class=&#34;token function&#34;&gt;rgba&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;0&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;0&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;0&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;.3&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;文字阴影-text-shadow&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文字阴影-text-shadow&#34;&gt;#&lt;/a&gt; 文字阴影 text-shadow&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/un573tQZ2xj4oqO.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;div:hover&amp;#123;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; text-shadow:5px 5px 6px rgba(0,0,0,.3);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&amp;#125;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;浮动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#浮动&#34;&gt;#&lt;/a&gt; 浮动&lt;/h2&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;figcaption data-lang=&#34;CSS&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token selector&#34;&gt;div:hover&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	 &lt;span class=&#34;token property&#34;&gt;text-shadow&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;5px 5px 6px &lt;span class=&#34;token function&#34;&gt;rgba&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;0&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;0&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;0&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;.3&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;浮动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#浮动&#34;&gt;#&lt;/a&gt; 浮动&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/kGd8Ca7cj6USLi3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/7sNLv3CAmVhYZcH.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://i.loli.net/2021/11/12/AXyZ5g6brx4oWNl.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
